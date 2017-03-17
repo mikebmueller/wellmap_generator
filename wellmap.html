@@ -1,0 +1,4365 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_0ef6473ae5e14e8ab4e612f46de7acbc {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0ef6473ae5e14e8ab4e612f46de7acbc" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_0ef6473ae5e14e8ab4e612f46de7acbc = L.map(
+                                  'map_0ef6473ae5e14e8ab4e612f46de7acbc',
+                                  {center: [51,-102],
+                                  zoom: 5,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_9266b66face94512a53d7b2cfc1ee3b6 = L.tileLayer(
+                'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'My Data Attribution',
+                    detectRetina: false
+                    }
+                ).addTo(map_0ef6473ae5e14e8ab4e612f46de7acbc);
+
+        
+    
+                                  var marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1 = L.markerClusterGroup({maxClusterRadius: 40});
+            map_0ef6473ae5e14e8ab4e612f46de7acbc.addLayer(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+            var marker_d7a88135a47e4a3eace59436afb2c091 = L.marker(
+                [49.321008,-102.166362],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_1b750a0e3f5a4f66b06c619e96cc4599 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d7a88135a47e4a3eace59436afb2c091.setIcon(icon_1b750a0e3f5a4f66b06c619e96cc4599);
+            
+    
+            var popup_f6cabd200d5a4c7c92f5127b1e893ac4 = L.popup({maxWidth: '650'});
+
+            
+                var html_04e9c8ab9f9a44f796758df2472c8567 = $('<div id="html_04e9c8ab9f9a44f796758df2472c8567" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Legacy Alameda E Hz 1B1-23-3A10-14-4-2 W2M<br><strong>Operator: </strong>Legacy Oil+Gas<br><strong>Target Formation: </strong>Huntoon</div>')[0];
+                popup_f6cabd200d5a4c7c92f5127b1e893ac4.setContent(html_04e9c8ab9f9a44f796758df2472c8567);
+            
+
+            marker_d7a88135a47e4a3eace59436afb2c091.bindPopup(popup_f6cabd200d5a4c7c92f5127b1e893ac4);
+
+            
+        
+    
+
+            var marker_f0fe92b401424ddca284f676ab7c80e1 = L.marker(
+                [49.299126,-102.188772],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_263b4be10532417f9c0ebd56758bd3c2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f0fe92b401424ddca284f676ab7c80e1.setIcon(icon_263b4be10532417f9c0ebd56758bd3c2);
+            
+    
+            var popup_eec5335dc0654dd3a968e7f249cde06a = L.popup({maxWidth: '650'});
+
+            
+                var html_95cc2c5c008642749bb7cc04e8ca80b8 = $('<div id="html_95cc2c5c008642749bb7cc04e8ca80b8" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Legacy Alameda E Hz 1D9-15-2D11-14-4-2 W2M<br><strong>Operator: </strong>Legacy Oil+Gas<br><strong>Target Formation: </strong>Huntoon</div>')[0];
+                popup_eec5335dc0654dd3a968e7f249cde06a.setContent(html_95cc2c5c008642749bb7cc04e8ca80b8);
+            
+
+            marker_f0fe92b401424ddca284f676ab7c80e1.bindPopup(popup_eec5335dc0654dd3a968e7f249cde06a);
+
+            
+        
+    
+
+            var marker_7136f8e060ff461c81445740a4ea35bc = L.marker(
+                [49.008297,-100.67691],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_11e33ac5e2674b3fb7152e4f9e105b7f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7136f8e060ff461c81445740a4ea35bc.setIcon(icon_11e33ac5e2674b3fb7152e4f9e105b7f);
+            
+    
+            var popup_e2195945eb7b468d8102306f5b8ff846 = L.popup({maxWidth: '650'});
+
+            
+                var html_1627fbd9c4f747dab691759045d57e36 = $('<div id="html_1627fbd9c4f747dab691759045d57e36" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>ARC 104 WASKADA HZ B11-6-1-24 WPM<br><strong>Operator: </strong>ARC Resources<br><strong>Target Formation: </strong>Spearfish</div>')[0];
+                popup_e2195945eb7b468d8102306f5b8ff846.setContent(html_1627fbd9c4f747dab691759045d57e36);
+            
+
+            marker_7136f8e060ff461c81445740a4ea35bc.bindPopup(popup_e2195945eb7b468d8102306f5b8ff846);
+
+            
+        
+    
+
+            var marker_7a5bb31e1ebb4c30b1db1e107f601a99 = L.marker(
+                [49.075379,-101.119501],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_c5bac7c6c75344e0bbf4f28c072ef213 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7a5bb31e1ebb4c30b1db1e107f601a99.setIcon(icon_c5bac7c6c75344e0bbf4f28c072ef213);
+            
+    
+            var popup_9c4e70cf676a412799907032686b0b8d = L.popup({maxWidth: '650'});
+
+            
+                var html_f06f9b4ff1184fca871667b7ca9e0e19 = $('<div id="html_f06f9b4ff1184fca871667b7ca9e0e19" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Legacy Pierson Hz 4C-35-1D-35-1-28 WPM<br><strong>Operator: </strong>Legacy Oil+Gas<br><strong>Target Formation: </strong>Spearfish</div>')[0];
+                popup_9c4e70cf676a412799907032686b0b8d.setContent(html_f06f9b4ff1184fca871667b7ca9e0e19);
+            
+
+            marker_7a5bb31e1ebb4c30b1db1e107f601a99.bindPopup(popup_9c4e70cf676a412799907032686b0b8d);
+
+            
+        
+    
+
+            var marker_a0640e97776b41a29773f2ce50db6a34 = L.marker(
+                [49.495571,-103.147212],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_2504525479ac4408abbb1e07667d79b2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a0640e97776b41a29773f2ce50db6a34.setIcon(icon_2504525479ac4408abbb1e07667d79b2);
+            
+    
+            var popup_aef5063d518a4343ba0b98dd3778ee44 = L.popup({maxWidth: '500'});
+
+            
+                var html_652a924bcb734c6bba656f072963ec35 = $('<div id="html_652a924bcb734c6bba656f072963ec35" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Painted Pony Viewfield HZ 2C4-27-1C2-28-6-9 W2<br><strong>Operator: </strong>Painted Pony<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_aef5063d518a4343ba0b98dd3778ee44.setContent(html_652a924bcb734c6bba656f072963ec35);
+            
+
+            marker_a0640e97776b41a29773f2ce50db6a34.bindPopup(popup_aef5063d518a4343ba0b98dd3778ee44);
+
+            
+        
+    
+
+            var marker_95fa7341574046cfa7ebc6879ed422f2 = L.marker(
+                [49.145566,-101.292589],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_aa08d7b5fbab44f78750d7df0caf2eb5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_95fa7341574046cfa7ebc6879ed422f2.setIcon(icon_aa08d7b5fbab44f78750d7df0caf2eb5);
+            
+    
+            var popup_8a7f262ef69e4caab9fc33948fe77281 = L.popup({maxWidth: '650'});
+
+            
+                var html_dd89e32f185c481dada817ca9429a90e = $('<div id="html_dd89e32f185c481dada817ca9429a90e" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Legacy Pierson Hz A16-22-2-29 WPM<br><strong>Operator: </strong>Legacy Oil+Gas<br><strong>Target Formation: </strong>Spearfish</div>')[0];
+                popup_8a7f262ef69e4caab9fc33948fe77281.setContent(html_dd89e32f185c481dada817ca9429a90e);
+            
+
+            marker_95fa7341574046cfa7ebc6879ed422f2.bindPopup(popup_8a7f262ef69e4caab9fc33948fe77281);
+
+            
+        
+    
+
+            var marker_6f76f3636f1b46cd97d72cd8d1c6150e = L.marker(
+                [49.023347,-100.58722],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_242f243496734ee29aee70d5d686a13d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6f76f3636f1b46cd97d72cd8d1c6150e.setIcon(icon_242f243496734ee29aee70d5d686a13d);
+            
+    
+            var popup_101b89a8f3454a13ab6ce2df012ff5df = L.popup({maxWidth: '650'});
+
+            
+                var html_60b946df402a4731928b63658c80b2f3 = $('<div id="html_60b946df402a4731928b63658c80b2f3" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>ARC Goodlands Hz 11-11-01-24 W1M<br><strong>Operator: </strong>ARC Resources<br><strong>Target Formation: </strong>Spearfish</div>')[0];
+                popup_101b89a8f3454a13ab6ce2df012ff5df.setContent(html_60b946df402a4731928b63658c80b2f3);
+            
+
+            marker_6f76f3636f1b46cd97d72cd8d1c6150e.bindPopup(popup_101b89a8f3454a13ab6ce2df012ff5df);
+
+            
+        
+    
+
+            var marker_626d88c55b484f0199a5c3ccbc973623 = L.marker(
+                [49.141878,-101.276084],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_0e492329d115450a96bd111ceb216830 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_626d88c55b484f0199a5c3ccbc973623.setIcon(icon_0e492329d115450a96bd111ceb216830);
+            
+    
+            var popup_d8bdf12190634caea289ec64235aa046 = L.popup({maxWidth: '650'});
+
+            
+                var html_12d64b4aa9dd4f6fadaa599dd42b2e24 = $('<div id="html_12d64b4aa9dd4f6fadaa599dd42b2e24" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Legacy Pierson Hz 12B-22-9A-22-2-29 WPM<br><strong>Operator: </strong>Legacy Oil+Gas<br><strong>Target Formation: </strong>Spearfish</div>')[0];
+                popup_d8bdf12190634caea289ec64235aa046.setContent(html_12d64b4aa9dd4f6fadaa599dd42b2e24);
+            
+
+            marker_626d88c55b484f0199a5c3ccbc973623.bindPopup(popup_d8bdf12190634caea289ec64235aa046);
+
+            
+        
+    
+
+            var marker_0cffcb592a9b40a397a4c280be7bef6c = L.marker(
+                [49.049191,-100.620685],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_5a6eb931a78942aba62fbfff27949430 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0cffcb592a9b40a397a4c280be7bef6c.setIcon(icon_5a6eb931a78942aba62fbfff27949430);
+            
+    
+            var popup_8bb9e98409974495b08f3c48d6b2f244 = L.popup({maxWidth: '650'});
+
+            
+                var html_a91def5d594641e18f997e63a4c0be66 = $('<div id="html_a91def5d594641e18f997e63a4c0be66" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>ARC Waskada HZNTL 8-22-01-24 W1M<br><strong>Operator: </strong>ARC Resources<br><strong>Target Formation: </strong>Spearfish</div>')[0];
+                popup_8bb9e98409974495b08f3c48d6b2f244.setContent(html_a91def5d594641e18f997e63a4c0be66);
+            
+
+            marker_0cffcb592a9b40a397a4c280be7bef6c.bindPopup(popup_8bb9e98409974495b08f3c48d6b2f244);
+
+            
+        
+    
+
+            var marker_30c4ead1ecac4295b60cc1424878e40c = L.marker(
+                [49.950735,-102.753456],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_df8b8823dc864c53bfd0d9b0b0e1d9f7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_30c4ead1ecac4295b60cc1424878e40c.setIcon(icon_df8b8823dc864c53bfd0d9b0b0e1d9f7);
+            
+    
+            var popup_aede73fac90943899416d9a57954ac7f = L.popup({maxWidth: '650'});
+
+            
+                var html_7e0fb5ffcfcb4e8a86b923f2ce7ce33e = $('<div id="html_7e0fb5ffcfcb4e8a86b923f2ce7ce33e" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Harvest Operations Moose Valley 2D5-34-1A1-33-11-6 W2M<br><strong>Operator: </strong>Harvest Operations<br><strong>Target Formation: </strong>Tilston</div>')[0];
+                popup_aede73fac90943899416d9a57954ac7f.setContent(html_7e0fb5ffcfcb4e8a86b923f2ce7ce33e);
+            
+
+            marker_30c4ead1ecac4295b60cc1424878e40c.bindPopup(popup_aede73fac90943899416d9a57954ac7f);
+
+            
+        
+    
+
+            var marker_d66a12eeadcc454392fd3b6cfc11d507 = L.marker(
+                [49.064095,-101.052131],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_3706cfaf5f1543f9833aba4952d1b15d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d66a12eeadcc454392fd3b6cfc11d507.setIcon(icon_3706cfaf5f1543f9833aba4952d1b15d);
+            
+    
+            var popup_486adccfe7914b049ba02cb890d82fd9 = L.popup({maxWidth: '650'});
+
+            
+                var html_a2816250d1624f24a03ff848c2e8376c = $('<div id="html_a2816250d1624f24a03ff848c2e8376c" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Legacy Coulter Hz 5B-29-5B-30-1-27 WPM<br><strong>Operator: </strong>Legacy Oil+Gas<br><strong>Target Formation: </strong>Spearfish</div>')[0];
+                popup_486adccfe7914b049ba02cb890d82fd9.setContent(html_a2816250d1624f24a03ff848c2e8376c);
+            
+
+            marker_d66a12eeadcc454392fd3b6cfc11d507.bindPopup(popup_486adccfe7914b049ba02cb890d82fd9);
+
+            
+        
+    
+
+            var marker_d652056f262a47529f1e972e1000cefa = L.marker(
+                [49.067746,-101.052131],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_6f5fe08274214c3c8abdb89f80dec748 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d652056f262a47529f1e972e1000cefa.setIcon(icon_6f5fe08274214c3c8abdb89f80dec748);
+            
+    
+            var popup_7e7bdd078f2948b2ad3cde9438f4c4e0 = L.popup({maxWidth: '650'});
+
+            
+                var html_35a2262412354e37830603352c95bf30 = $('<div id="html_35a2262412354e37830603352c95bf30" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Legacy Coulter Prov Hz 12C-29-9D-29-1-27 WPM<br><strong>Operator: </strong>Legacy Oil+Gas<br><strong>Target Formation: </strong>Spearfish</div>')[0];
+                popup_7e7bdd078f2948b2ad3cde9438f4c4e0.setContent(html_35a2262412354e37830603352c95bf30);
+            
+
+            marker_d652056f262a47529f1e972e1000cefa.bindPopup(popup_7e7bdd078f2948b2ad3cde9438f4c4e0);
+
+            
+        
+    
+
+            var marker_5058c11d6fc542ee943500c24958b13c = L.marker(
+                [49.004866,-100.643421],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_78fc66b11e424f8cb85e82b211bc540c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5058c11d6fc542ee943500c24958b13c.setIcon(icon_78fc66b11e424f8cb85e82b211bc540c);
+            
+    
+            var popup_afbe9733824b4b749bb5ad0f364cbdb6 = L.popup({maxWidth: '650'});
+
+            
+                var html_e69822691fc544a3bd3ac99aaae01ae5 = $('<div id="html_e69822691fc544a3bd3ac99aaae01ae5" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>ARC Waskada Prov. HZNTL B8-04-1-24 W1M<br><strong>Operator: </strong>ARC Resources<br><strong>Target Formation: </strong>Spearfish</div>')[0];
+                popup_afbe9733824b4b749bb5ad0f364cbdb6.setContent(html_e69822691fc544a3bd3ac99aaae01ae5);
+            
+
+            marker_5058c11d6fc542ee943500c24958b13c.bindPopup(popup_afbe9733824b4b749bb5ad0f364cbdb6);
+
+            
+        
+    
+
+            var marker_6e99e3df2e8f4cacb641e754b019cef4 = L.marker(
+                [49.629992,-103.138418],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_dd9eeff310d74e45b8c99a494b1ee813 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6e99e3df2e8f4cacb641e754b019cef4.setIcon(icon_dd9eeff310d74e45b8c99a494b1ee813);
+            
+    
+            var popup_b3c80d068e724a52b5b1667c945f0834 = L.popup({maxWidth: '500'});
+
+            
+                var html_cde429a53627432b99ecc6dc833fac1e = $('<div id="html_cde429a53627432b99ecc6dc833fac1e" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD HZ 4D8-10-3D8-11-8-9 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_b3c80d068e724a52b5b1667c945f0834.setContent(html_cde429a53627432b99ecc6dc833fac1e);
+            
+
+            marker_6e99e3df2e8f4cacb641e754b019cef4.bindPopup(popup_b3c80d068e724a52b5b1667c945f0834);
+
+            
+        
+    
+
+            var marker_cdc54769948f4c36af881431ca7b8057 = L.marker(
+                [49.717316,-103.183456],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_4c69675f6e92486f8e4a9805edb74677 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cdc54769948f4c36af881431ca7b8057.setIcon(icon_4c69675f6e92486f8e4a9805edb74677);
+            
+    
+            var popup_4e6e91e3845649c990755ab42eed5c9c = L.popup({maxWidth: '500'});
+
+            
+                var html_0aa09de9e9aa4317bd036f7521555ad1 = $('<div id="html_0aa09de9e9aa4317bd036f7521555ad1" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC HEWARD SOUTH HZ 5D8-8-4B5-8-9-9 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_4e6e91e3845649c990755ab42eed5c9c.setContent(html_0aa09de9e9aa4317bd036f7521555ad1);
+            
+
+            marker_cdc54769948f4c36af881431ca7b8057.bindPopup(popup_4e6e91e3845649c990755ab42eed5c9c);
+
+            
+        
+    
+
+            var marker_f271984a37694a21afab136745b4b301 = L.marker(
+                [49.768307,-103.08749],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_1244f389c58b4c0c982bd15f7da72840 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f271984a37694a21afab136745b4b301.setIcon(icon_1244f389c58b4c0c982bd15f7da72840);
+            
+    
+            var popup_344024d2e2354ed684692c9d1e9cb503 = L.popup({maxWidth: '500'});
+
+            
+                var html_5f913ed0b118498ba3f276c186099dd7 = $('<div id="html_5f913ed0b118498ba3f276c186099dd7" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD HZ 3D13-30-1C13-31-9-8 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_344024d2e2354ed684692c9d1e9cb503.setContent(html_5f913ed0b118498ba3f276c186099dd7);
+            
+
+            marker_f271984a37694a21afab136745b4b301.bindPopup(popup_344024d2e2354ed684692c9d1e9cb503);
+
+            
+        
+    
+
+            var marker_f649b2f7bf564eee93b14ae33f1909ae = L.marker(
+                [49.746426,-103.138363],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_92e8d494f415473f9f738fd7d7268f7e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f649b2f7bf564eee93b14ae33f1909ae.setIcon(icon_92e8d494f415473f9f738fd7d7268f7e);
+            
+    
+            var popup_f74b027b040742639fbadfd769fdcdcd = L.popup({maxWidth: '500'});
+
+            
+                var html_55062cc64e3b438785e90fed9dcdaa34 = $('<div id="html_55062cc64e3b438785e90fed9dcdaa34" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD HZ 4A8-22-3A8-23-9-9 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_f74b027b040742639fbadfd769fdcdcd.setContent(html_55062cc64e3b438785e90fed9dcdaa34);
+            
+
+            marker_f649b2f7bf564eee93b14ae33f1909ae.bindPopup(popup_f74b027b040742639fbadfd769fdcdcd);
+
+            
+        
+    
+
+            var marker_492aaa1d5233401f92558a41fee7d213 = L.marker(
+                [49.695437,-103.200221],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_bceb12ceb8404457884a1215977a7907 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_492aaa1d5233401f92558a41fee7d213.setIcon(icon_bceb12ceb8404457884a1215977a7907);
+            
+    
+            var popup_61b88bc2e1f84eb18bfcc26759785b30 = L.popup({maxWidth: '500'});
+
+            
+                var html_deb3a720ae254034bd28d5070c932ab7 = $('<div id="html_deb3a720ae254034bd28d5070c932ab7" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD HZ 2B13-32-2A16-32-8-9 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_61b88bc2e1f84eb18bfcc26759785b30.setContent(html_deb3a720ae254034bd28d5070c932ab7);
+            
+
+            marker_492aaa1d5233401f92558a41fee7d213.bindPopup(popup_61b88bc2e1f84eb18bfcc26759785b30);
+
+            
+        
+    
+
+            var marker_d015d0134a3844cdac5f0991a4b30c29 = L.marker(
+                [49.724555,-103.143923],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_a8fbed3d672545299c9800559efb99bc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d015d0134a3844cdac5f0991a4b30c29.setIcon(icon_a8fbed3d672545299c9800559efb99bc);
+            
+    
+            var popup_aca7e7ffa3c540bf95fa6739a09ea958 = L.popup({maxWidth: '500'});
+
+            
+                var html_794722a74bd147bf8fbaa5becd02424e = $('<div id="html_794722a74bd147bf8fbaa5becd02424e" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD HZ 4C15-10-2D15-15-9-9 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_aca7e7ffa3c540bf95fa6739a09ea958.setContent(html_794722a74bd147bf8fbaa5becd02424e);
+            
+
+            marker_d015d0134a3844cdac5f0991a4b30c29.bindPopup(popup_aca7e7ffa3c540bf95fa6739a09ea958);
+
+            
+        
+    
+
+            var marker_9a17302bdc1041bfbba5db150c03ef4d = L.marker(
+                [49.71173,-101.716322],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_35975e5707ad4d23846a7148613a8f9a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9a17302bdc1041bfbba5db150c03ef4d.setIcon(icon_35975e5707ad4d23846a7148613a8f9a);
+            
+    
+            var popup_b19bec90795c4450b43e12d7cc283886 = L.popup({maxWidth: '650'});
+
+            
+                var html_95647daa806346569c433a1ff4c2ba60 = $('<div id="html_95647daa806346569c433a1ff4c2ba60" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>BDOG MAIR 2HZ 4C1-2-4C9-2-9-32 W1M<br><strong>Operator: </strong>Bulldog Resources<br><strong>Target Formation: </strong>Souris Valley</div>')[0];
+                popup_b19bec90795c4450b43e12d7cc283886.setContent(html_95647daa806346569c433a1ff4c2ba60);
+            
+
+            marker_9a17302bdc1041bfbba5db150c03ef4d.bindPopup(popup_b19bec90795c4450b43e12d7cc283886);
+
+            
+        
+    
+
+            var marker_62c53458a0e44338a021b029d0fba2c9 = L.marker(
+                [49.742882,-102.929312],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_6019a7e1306f4143bcb51749b19c5f83 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_62c53458a0e44338a021b029d0fba2c9.setIcon(icon_6019a7e1306f4143bcb51749b19c5f83);
+            
+    
+            var popup_9ec6c716cd684eb7951a49198e805fa5 = L.popup({maxWidth: '500'});
+
+            
+                var html_07102255e4a04774ae261489db82e79f = $('<div id="html_07102255e4a04774ae261489db82e79f" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1B4-20--1C13-20-009-07 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_9ec6c716cd684eb7951a49198e805fa5.setContent(html_07102255e4a04774ae261489db82e79f);
+            
+
+            marker_62c53458a0e44338a021b029d0fba2c9.bindPopup(popup_9ec6c716cd684eb7951a49198e805fa5);
+
+            
+        
+    
+
+            var marker_3e1f11e7929c4c5d9c502ccf363b7fb6 = L.marker(
+                [49.742882,-102.929312],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_99bdd638a4cb466c86f0121fa44a04de = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3e1f11e7929c4c5d9c502ccf363b7fb6.setIcon(icon_99bdd638a4cb466c86f0121fa44a04de);
+            
+    
+            var popup_3b5c9830ea4e4a5e903906383d5e34b9 = L.popup({maxWidth: '500'});
+
+            
+                var html_bc7d22e45fc24b319bd7c32897471c22 = $('<div id="html_bc7d22e45fc24b319bd7c32897471c22" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 2A4-20--4B4-17-009-07 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_3b5c9830ea4e4a5e903906383d5e34b9.setContent(html_bc7d22e45fc24b319bd7c32897471c22);
+            
+
+            marker_3e1f11e7929c4c5d9c502ccf363b7fb6.bindPopup(popup_3b5c9830ea4e4a5e903906383d5e34b9);
+
+            
+        
+    
+
+            var marker_e2ee447fb43345f384f1b10aabe4bdda = L.marker(
+                [49.742897,-102.890012],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_bb78c80bd0c14d6a90789dddf95269fd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e2ee447fb43345f384f1b10aabe4bdda.setIcon(icon_bb78c80bd0c14d6a90789dddf95269fd);
+            
+    
+            var popup_c671ba0a26314a279b600e76176190a4 = L.popup({maxWidth: '500'});
+
+            
+                var html_36fd06a3866a499d8f9571ebc693e931 = $('<div id="html_36fd06a3866a499d8f9571ebc693e931" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1B1-21--3A1-16-009-07 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_c671ba0a26314a279b600e76176190a4.setContent(html_36fd06a3866a499d8f9571ebc693e931);
+            
+
+            marker_e2ee447fb43345f384f1b10aabe4bdda.bindPopup(popup_c671ba0a26314a279b600e76176190a4);
+
+            
+        
+    
+
+            var marker_b0f404b9ba1c42d88c83373490a49495 = L.marker(
+                [49.611927,-103.014079],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_cddbd2839fdf4756bcae042494da7715 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b0f404b9ba1c42d88c83373490a49495.setIcon(icon_cddbd2839fdf4756bcae042494da7715);
+            
+    
+            var popup_123cebe54cff4099a79d322f6a75503e = L.popup({maxWidth: '500'});
+
+            
+                var html_7bcd372512f444748580ad348a78900b = $('<div id="html_7bcd372512f444748580ad348a78900b" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 2A3-3--4B3-34-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_123cebe54cff4099a79d322f6a75503e.setContent(html_7bcd372512f444748580ad348a78900b);
+            
+
+            marker_b0f404b9ba1c42d88c83373490a49495.bindPopup(popup_123cebe54cff4099a79d322f6a75503e);
+
+            
+        
+    
+
+            var marker_e42cda83c56347b992e27c9568be24b9 = L.marker(
+                [49.023453,-100.626601],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_ff3c5590241b48cc8765757bb82e8fbd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e42cda83c56347b992e27c9568be24b9.setIcon(icon_ff3c5590241b48cc8765757bb82e8fbd);
+            
+    
+            var popup_58f24193ce70438b8a70735867514cb8 = L.popup({maxWidth: '650'});
+
+            
+                var html_00ca76d71ce144169a3e7078ac94e714 = $('<div id="html_00ca76d71ce144169a3e7078ac94e714" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>ARC WASKADA HZNTL 12-09-001-24 WPM<br><strong>Operator: </strong>ARC Resources<br><strong>Target Formation: </strong>Spearfish</div>')[0];
+                popup_58f24193ce70438b8a70735867514cb8.setContent(html_00ca76d71ce144169a3e7078ac94e714);
+            
+
+            marker_e42cda83c56347b992e27c9568be24b9.bindPopup(popup_58f24193ce70438b8a70735867514cb8);
+
+            
+        
+    
+
+            var marker_2e2b30effb93460abb6425f6d2c2b236 = L.marker(
+                [49.026989,-100.581685],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_4442474fdbc54cea866845c6518597f5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2e2b30effb93460abb6425f6d2c2b236.setIcon(icon_4442474fdbc54cea866845c6518597f5);
+            
+    
+            var popup_0328ed5fd44246959acfb646ee06d697 = L.popup({maxWidth: '650'});
+
+            
+                var html_566221a0a2ee4713ad208f24697dd0d9 = $('<div id="html_566221a0a2ee4713ad208f24697dd0d9" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>ARC Goodlands HZNTL 13-11-01-24 WPM<br><strong>Operator: </strong>ARC Resources<br><strong>Target Formation: </strong>Spearfish</div>')[0];
+                popup_0328ed5fd44246959acfb646ee06d697.setContent(html_566221a0a2ee4713ad208f24697dd0d9);
+            
+
+            marker_2e2b30effb93460abb6425f6d2c2b236.bindPopup(popup_0328ed5fd44246959acfb646ee06d697);
+
+            
+        
+    
+
+            var marker_022f5c3cefd44c108df608ec33354536 = L.marker(
+                [49.030806,-100.559091],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_5dbe220695914496b5816f35eaedde02 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_022f5c3cefd44c108df608ec33354536.setIcon(icon_5dbe220695914496b5816f35eaedde02);
+            
+    
+            var popup_f68802d63e624c8098e17d1ef14f70fd = L.popup({maxWidth: '650'});
+
+            
+                var html_3fd2144ca05547ed9fcfca0f8198d19b = $('<div id="html_3fd2144ca05547ed9fcfca0f8198d19b" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>ARC Waskada Prov HZNTL (4B-13) 15-11-01-24 WPM<br><strong>Operator: </strong>ARC Resources<br><strong>Target Formation: </strong>Spearfish</div>')[0];
+                popup_f68802d63e624c8098e17d1ef14f70fd.setContent(html_3fd2144ca05547ed9fcfca0f8198d19b);
+            
+
+            marker_022f5c3cefd44c108df608ec33354536.bindPopup(popup_f68802d63e624c8098e17d1ef14f70fd);
+
+            
+        
+    
+
+            var marker_444886e7e863468e8943c427ed85a27b = L.marker(
+                [49.075316,-101.023822],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_e8194ba871174557aabcd98dc507cefc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_444886e7e863468e8943c427ed85a27b.setIcon(icon_e8194ba871174557aabcd98dc507cefc);
+            
+    
+            var popup_aaec5f9e3b7e4492ae5778df39623e37 = L.popup({maxWidth: '650'});
+
+            
+                var html_705382c49948456c9dac7aa7b257db9a = $('<div id="html_705382c49948456c9dac7aa7b257db9a" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Legacy Coulter Hz 1-34-1-27 WPM<br><strong>Operator: </strong>Legacy Oil+Gas<br><strong>Target Formation: </strong>Spearfish</div>')[0];
+                popup_aaec5f9e3b7e4492ae5778df39623e37.setContent(html_705382c49948456c9dac7aa7b257db9a);
+            
+
+            marker_444886e7e863468e8943c427ed85a27b.bindPopup(popup_aaec5f9e3b7e4492ae5778df39623e37);
+
+            
+        
+    
+
+            var marker_ba2621fca7a043debf0f5f0353d36bd9 = L.marker(
+                [49.011817,-102.473504],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_1dcaf42d86674328902e2947dbcc86d5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ba2621fca7a043debf0f5f0353d36bd9.setIcon(icon_1dcaf42d86674328902e2947dbcc86d5);
+            
+    
+            var popup_8f1c01468ba345ccb9d86a328dbbc059 = L.popup({maxWidth: '650'});
+
+            
+                var html_b98b4bfc934943eab61fdb329e87b311 = $('<div id="html_b98b4bfc934943eab61fdb329e87b311" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Elkhorn et al Pinto HZ 2D13-3-4B2-4-1-4 W2M<br><strong>Operator: </strong>Elkhorn Resources<br><strong>Target Formation: </strong>Midale Nesson</div>')[0];
+                popup_8f1c01468ba345ccb9d86a328dbbc059.setContent(html_b98b4bfc934943eab61fdb329e87b311);
+            
+
+            marker_ba2621fca7a043debf0f5f0353d36bd9.bindPopup(popup_8f1c01468ba345ccb9d86a328dbbc059);
+
+            
+        
+    
+
+            var marker_60cf3ed3d98a4183860a003e1cf403f1 = L.marker(
+                [49.011817,-102.400855],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_aa925e6b066f4a098a735f2fe3456954 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_60cf3ed3d98a4183860a003e1cf403f1.setIcon(icon_aa925e6b066f4a098a735f2fe3456954);
+            
+    
+            var popup_9ce0a337eef0459890600361a88e5da5 = L.popup({maxWidth: '650'});
+
+            
+                var html_2392e75d4f2c4cfcbed5090fc7cabcae = $('<div id="html_2392e75d4f2c4cfcbed5090fc7cabcae" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Elkhorn Northgate HZ 1D14-6-2D14-7-1-3 W2M<br><strong>Operator: </strong>Elkhorn Resources<br><strong>Target Formation: </strong>Torquay</div>')[0];
+                popup_9ce0a337eef0459890600361a88e5da5.setContent(html_2392e75d4f2c4cfcbed5090fc7cabcae);
+            
+
+            marker_60cf3ed3d98a4183860a003e1cf403f1.bindPopup(popup_9ce0a337eef0459890600361a88e5da5);
+
+            
+        
+    
+
+            var marker_6780fa8153fa4f6d92122de48b82ecb3 = L.marker(
+                [49.011859,-102.38401],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_aa349c44bf694ee19fb9cf9457fa3e37 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6780fa8153fa4f6d92122de48b82ecb3.setIcon(icon_aa349c44bf694ee19fb9cf9457fa3e37);
+            
+    
+            var popup_70fb1380d4a74c99b4f4d36012c864e7 = L.popup({maxWidth: '650'});
+
+            
+                var html_0369a121282d424483d8e46db83175f3 = $('<div id="html_0369a121282d424483d8e46db83175f3" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Elkhorn Northgate HZ 5C13-5-12B4-5-1-3 W2M<br><strong>Operator: </strong>Elkhorn Resources<br><strong>Target Formation: </strong>Torquay</div>')[0];
+                popup_70fb1380d4a74c99b4f4d36012c864e7.setContent(html_0369a121282d424483d8e46db83175f3);
+            
+
+            marker_6780fa8153fa4f6d92122de48b82ecb3.bindPopup(popup_70fb1380d4a74c99b4f4d36012c864e7);
+
+            
+        
+    
+
+            var marker_9c82c09bfeee4b04954ea2a518b3474d = L.marker(
+                [49.651915,-103.002959],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_9aff067a8caa414cb8f81e24f515e60b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9c82c09bfeee4b04954ea2a518b3474d.setIcon(icon_9aff067a8caa414cb8f81e24f515e60b);
+            
+    
+            var popup_6bb27dd688c24e7a86697435019aadd6 = L.popup({maxWidth: '500'});
+
+            
+                var html_5bb261ab40b346b4b066b11c5d26043f = $('<div id="html_5bb261ab40b346b4b066b11c5d26043f" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1D16-15--2D16-14-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_6bb27dd688c24e7a86697435019aadd6.setContent(html_5bb261ab40b346b4b066b11c5d26043f);
+            
+
+            marker_9c82c09bfeee4b04954ea2a518b3474d.bindPopup(popup_6bb27dd688c24e7a86697435019aadd6);
+
+            
+        
+    
+
+            var marker_8a699611aa3e42d0976331b10ae9b56c = L.marker(
+                [49.764719,-103.025529],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_37b745dcd5974737b385af538c8cfa5d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8a699611aa3e42d0976331b10ae9b56c.setIcon(icon_37b745dcd5974737b385af538c8cfa5d);
+            
+    
+            var popup_afc364edbe0a4f14ab6a7eaa355e2e5b = L.popup({maxWidth: '500'});
+
+            
+                var html_ccb62e839fb74056b5961be21bf5af70 = $('<div id="html_ccb62e839fb74056b5961be21bf5af70" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 2D9-28--2D9-27-9-8 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_afc364edbe0a4f14ab6a7eaa355e2e5b.setContent(html_ccb62e839fb74056b5961be21bf5af70);
+            
+
+            marker_8a699611aa3e42d0976331b10ae9b56c.bindPopup(popup_afc364edbe0a4f14ab6a7eaa355e2e5b);
+
+            
+        
+    
+
+            var marker_66435ead9e6647e98533f7ff3d13c590 = L.marker(
+                [49.58989,-103.228798],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_0d17ab0cbe404962a8f8021e29b29164 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_66435ead9e6647e98533f7ff3d13c590.setIcon(icon_0d17ab0cbe404962a8f8021e29b29164);
+            
+    
+            var popup_66eee5309842495a92ba5a3d1118b5f0 = L.popup({maxWidth: '500'});
+
+            
+                var html_007923d26ae64d79951d3fdd271b91e9 = $('<div id="html_007923d26ae64d79951d3fdd271b91e9" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 4D9-25--2D9-30-007-10 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_66eee5309842495a92ba5a3d1118b5f0.setContent(html_007923d26ae64d79951d3fdd271b91e9);
+            
+
+            marker_66435ead9e6647e98533f7ff3d13c590.bindPopup(popup_66eee5309842495a92ba5a3d1118b5f0);
+
+            
+        
+    
+
+            var marker_16ff5f0deda1489989f972d125949424 = L.marker(
+                [49.390014,-102.698771],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_abd633fbebd5405e9c5e15230b75c2e9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_16ff5f0deda1489989f972d125949424.setIcon(icon_abd633fbebd5405e9c5e15230b75c2e9);
+            
+    
+            var popup_582b4b5a58da44979e7dc7c5c411290a = L.popup({maxWidth: '500'});
+
+            
+                var html_726a8af23ef04cf4bba597ef57ea8c0b = $('<div id="html_726a8af23ef04cf4bba597ef57ea8c0b" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 2C13-13--1C13-14-005-06 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_582b4b5a58da44979e7dc7c5c411290a.setContent(html_726a8af23ef04cf4bba597ef57ea8c0b);
+            
+
+            marker_16ff5f0deda1489989f972d125949424.bindPopup(popup_582b4b5a58da44979e7dc7c5c411290a);
+
+            
+        
+    
+
+            var marker_4d5069a661054eba8a23167671bb5abe = L.marker(
+                [49.538811,-102.75431],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_a5767ccb5fa446159a202b3d7c102888 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4d5069a661054eba8a23167671bb5abe.setIcon(icon_a5767ccb5fa446159a202b3d7c102888);
+            
+    
+            var popup_99d5d61ae1a44fbb9550c1f0ec8598bd = L.popup({maxWidth: '500'});
+
+            
+                var html_693d45da1ee14466bcf7187ca03eac45 = $('<div id="html_693d45da1ee14466bcf7187ca03eac45" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 4A1-9--4A1-10-007-06 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_99d5d61ae1a44fbb9550c1f0ec8598bd.setContent(html_693d45da1ee14466bcf7187ca03eac45);
+            
+
+            marker_4d5069a661054eba8a23167671bb5abe.bindPopup(popup_99d5d61ae1a44fbb9550c1f0ec8598bd);
+
+            
+        
+    
+
+            var marker_fa0d08bba0924e39838b0c05754ee0ea = L.marker(
+                [49.662748,-103.132598],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_8ce4f253b8444c3f9d6f30e547a84e45 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fa0d08bba0924e39838b0c05754ee0ea.setIcon(icon_8ce4f253b8444c3f9d6f30e547a84e45);
+            
+    
+            var popup_3a5b5da8622d4806a3e35795e1f556ac = L.popup({maxWidth: '500'});
+
+            
+                var html_29edad93292c41bfbc51793c17a56618 = $('<div id="html_29edad93292c41bfbc51793c17a56618" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1B12-23--3D8-23-008-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_3a5b5da8622d4806a3e35795e1f556ac.setContent(html_29edad93292c41bfbc51793c17a56618);
+            
+
+            marker_fa0d08bba0924e39838b0c05754ee0ea.bindPopup(popup_3a5b5da8622d4806a3e35795e1f556ac);
+
+            
+        
+    
+
+            var marker_bab37397424b4332b70ce1824e72f980 = L.marker(
+                [49.659142,-103.160971],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_d04224309824437297bb05275b8f2e68 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bab37397424b4332b70ce1824e72f980.setIcon(icon_d04224309824437297bb05275b8f2e68);
+            
+    
+            var popup_c7e376ff24db4636ae3532ce1b1d313f = L.popup({maxWidth: '500'});
+
+            
+                var html_820c01b29dab4ba5935cbf462f7dd7b8 = $('<div id="html_820c01b29dab4ba5935cbf462f7dd7b8" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 4A8-21--4B5-21-008-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_c7e376ff24db4636ae3532ce1b1d313f.setContent(html_820c01b29dab4ba5935cbf462f7dd7b8);
+            
+
+            marker_bab37397424b4332b70ce1824e72f980.bindPopup(popup_c7e376ff24db4636ae3532ce1b1d313f);
+
+            
+        
+    
+
+            var marker_b45c090ac8c04c5ba7083bad4a65c5b7 = L.marker(
+                [49.778487,-101.960458],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_6aced3afba414d44a77a35f8a76de74d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b45c090ac8c04c5ba7083bad4a65c5b7.setIcon(icon_6aced3afba414d44a77a35f8a76de74d);
+            
+    
+            var popup_854509161f704390a8fba8061a3d43cb = L.popup({maxWidth: '650'});
+
+            
+                var html_ffcd21c03c0044b0844d926754f79a8d = $('<div id="html_ffcd21c03c0044b0844d926754f79a8d" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Pemoco Parkman 2Hz 4C13-30-2D2-36-9-34 W1M<br><strong>Operator: </strong>Pemoco<br><strong>Target Formation: </strong>Tilston</div>')[0];
+                popup_854509161f704390a8fba8061a3d43cb.setContent(html_ffcd21c03c0044b0844d926754f79a8d);
+            
+
+            marker_b45c090ac8c04c5ba7083bad4a65c5b7.bindPopup(popup_854509161f704390a8fba8061a3d43cb);
+
+            
+        
+    
+
+            var marker_6e18fd59905d4bd893675776fecfbb20 = L.marker(
+                [49.710114,-102.929297],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_b82dce7c4f664555877104bdd9b2b8d5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6e18fd59905d4bd893675776fecfbb20.setIcon(icon_b82dce7c4f664555877104bdd9b2b8d5);
+            
+    
+            var popup_8851709790c44318bebf52b07a5d51bc = L.popup({maxWidth: '500'});
+
+            
+                var html_04039db6781a4765bf4034f4fe55ba6c = $('<div id="html_04039db6781a4765bf4034f4fe55ba6c" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1B13-5--1B13-6-009-07 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_8851709790c44318bebf52b07a5d51bc.setContent(html_04039db6781a4765bf4034f4fe55ba6c);
+            
+
+            marker_6e18fd59905d4bd893675776fecfbb20.bindPopup(popup_8851709790c44318bebf52b07a5d51bc);
+
+            
+        
+    
+
+            var marker_d4dc88e77430409fab3d54c65d8ac874 = L.marker(
+                [49.710114,-102.929297],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_0d74f69c60724abeb2ae01a84323b389 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d4dc88e77430409fab3d54c65d8ac874.setIcon(icon_0d74f69c60724abeb2ae01a84323b389);
+            
+    
+            var popup_5447afbdffa94fe4b2aefede8c4c1930 = L.popup({maxWidth: '500'});
+
+            
+                var html_3d8983e836ad41de9867b621f0342037 = $('<div id="html_3d8983e836ad41de9867b621f0342037" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 5B13-05--2A16-05-009-07 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_5447afbdffa94fe4b2aefede8c4c1930.setContent(html_3d8983e836ad41de9867b621f0342037);
+            
+
+            marker_d4dc88e77430409fab3d54c65d8ac874.bindPopup(popup_5447afbdffa94fe4b2aefede8c4c1930);
+
+            
+        
+    
+
+            var marker_c8e5f3e847754c5d8c4cb4df01d013a0 = L.marker(
+                [49.538811,-102.75431],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_8d3fe3124d414de387da971f0d392321 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c8e5f3e847754c5d8c4cb4df01d013a0.setIcon(icon_8d3fe3124d414de387da971f0d392321);
+            
+    
+            var popup_d62d3fa0c689417daf77375e9014644b = L.popup({maxWidth: '500'});
+
+            
+                var html_0725c314144e468ca4395ba8d12a7e68 = $('<div id="html_0725c314144e468ca4395ba8d12a7e68" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1A1-09--3A1-04-007-06 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_d62d3fa0c689417daf77375e9014644b.setContent(html_0725c314144e468ca4395ba8d12a7e68);
+            
+
+            marker_c8e5f3e847754c5d8c4cb4df01d013a0.bindPopup(popup_d62d3fa0c689417daf77375e9014644b);
+
+            
+        
+    
+
+            var marker_b706f92a60ce4b4cac97f1de70ed7f7f = L.marker(
+                [51.767061,-109.308813],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_007dd3041cf64a12bb1d605b3b28301f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b706f92a60ce4b4cac97f1de70ed7f7f.setIcon(icon_007dd3041cf64a12bb1d605b3b28301f);
+            
+    
+            var popup_3b439913422a4a3997e7b72aebb7f85a = L.popup({maxWidth: '650'});
+
+            
+                var html_d476607fd29c44a2b1a666199fbcef57 = $('<div id="html_d476607fd29c44a2b1a666199fbcef57" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Beaumont Kerrobert Hz 4C4-26--2B7-27-032-24 W3M<br><strong>Operator: </strong>Beaumont Energy<br><strong>Target Formation: </strong>Viking</div>')[0];
+                popup_3b439913422a4a3997e7b72aebb7f85a.setContent(html_d476607fd29c44a2b1a666199fbcef57);
+            
+
+            marker_b706f92a60ce4b4cac97f1de70ed7f7f.bindPopup(popup_3b439913422a4a3997e7b72aebb7f85a);
+
+            
+        
+    
+
+            var marker_0744159589fd448488ab8a3def017fc7 = L.marker(
+                [51.767061,-109.308813],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_4403fdba1b0f42b1908c33b11bfabcbd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0744159589fd448488ab8a3def017fc7.setIcon(icon_4403fdba1b0f42b1908c33b11bfabcbd);
+            
+    
+            var popup_73b940a1b8b64a238c2dee55e12f283d = L.popup({maxWidth: '650'});
+
+            
+                var html_60dbfb535b214af58e0cf52f9b8b057c = $('<div id="html_60dbfb535b214af58e0cf52f9b8b057c" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Beaumont Kerrobert Hz 1C4-26-3B2-27-032-24 W3M<br><strong>Operator: </strong>Beaumont Energy<br><strong>Target Formation: </strong>Viking</div>')[0];
+                popup_73b940a1b8b64a238c2dee55e12f283d.setContent(html_60dbfb535b214af58e0cf52f9b8b057c);
+            
+
+            marker_0744159589fd448488ab8a3def017fc7.bindPopup(popup_73b940a1b8b64a238c2dee55e12f283d);
+
+            
+        
+    
+
+            var marker_96a26e266efb45d7936958582ba6682f = L.marker(
+                [51.777867,-109.190593],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_02d283e2f71e43bba7199c91c530b81d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_96a26e266efb45d7936958582ba6682f.setIcon(icon_02d283e2f71e43bba7199c91c530b81d);
+            
+    
+            var popup_2bc50c33da224720bfaff3e59840c72b = L.popup({maxWidth: '650'});
+
+            
+                var html_fcc49ed8709844898fef383458eba0ed = $('<div id="html_fcc49ed8709844898fef383458eba0ed" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Beaumont Kerrobert Hz 5B13-27-2D7-28-032-23 W3M<br><strong>Operator: </strong>Beaumont Energy<br><strong>Target Formation: </strong>Viking</div>')[0];
+                popup_2bc50c33da224720bfaff3e59840c72b.setContent(html_fcc49ed8709844898fef383458eba0ed);
+            
+
+            marker_96a26e266efb45d7936958582ba6682f.bindPopup(popup_2bc50c33da224720bfaff3e59840c72b);
+
+            
+        
+    
+
+            var marker_b4c897469e0144b6a6bc582c169d0cfd = L.marker(
+                [51.825242,-109.356137],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_b203a632134d4a9a821a1647b6a34470 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b4c897469e0144b6a6bc582c169d0cfd.setIcon(icon_b203a632134d4a9a821a1647b6a34470);
+            
+    
+            var popup_29d597fb56ae473b9798b3cc119e4b4c = L.popup({maxWidth: '650'});
+
+            
+                var html_eb9f06246bb94baa8cf2c8a0e64a716b = $('<div id="html_eb9f06246bb94baa8cf2c8a0e64a716b" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Beaumont Kerrobert Hz 4A4-16-2B11-09-33-24 W3M<br><strong>Operator: </strong>Beaumont Energy<br><strong>Target Formation: </strong>Viking</div>')[0];
+                popup_29d597fb56ae473b9798b3cc119e4b4c.setContent(html_eb9f06246bb94baa8cf2c8a0e64a716b);
+            
+
+            marker_b4c897469e0144b6a6bc582c169d0cfd.bindPopup(popup_29d597fb56ae473b9798b3cc119e4b4c);
+
+            
+        
+    
+
+            var marker_8df3c7ea18a8431fb3b0232ebd9f0f9d = L.marker(
+                [51.701304,-108.564603],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_7f349bbb7d5143d692ef676e4cc59b1d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8df3c7ea18a8431fb3b0232ebd9f0f9d.setIcon(icon_7f349bbb7d5143d692ef676e4cc59b1d);
+            
+    
+            var popup_c5ae4b00579d4dc29e30ad9521c9e2e1 = L.popup({maxWidth: '650'});
+
+            
+                var html_183c8997b65d458596721181b9ca53ff = $('<div id="html_183c8997b65d458596721181b9ca53ff" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Renegade Dodsland HZ 4B10-36-4B12-36-31-19 W3M<br><strong>Operator: </strong>Renegade Petroleum<br><strong>Target Formation: </strong>Viking</div>')[0];
+                popup_c5ae4b00579d4dc29e30ad9521c9e2e1.setContent(html_183c8997b65d458596721181b9ca53ff);
+            
+
+            marker_8df3c7ea18a8431fb3b0232ebd9f0f9d.bindPopup(popup_c5ae4b00579d4dc29e30ad9521c9e2e1);
+
+            
+        
+    
+
+            var marker_9b51f182940643198161e5e2bb01a9ff = L.marker(
+                [51.737901,-109.24985],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_e0a623425e3c421680d5148d257280bc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9b51f182940643198161e5e2bb01a9ff.setIcon(icon_e0a623425e3c421680d5148d257280bc);
+            
+    
+            var popup_6fc7137ca4d04860a7e17844fb90b41b = L.popup({maxWidth: '650'});
+
+            
+                var html_d1fd01053c7c41efa4337e956f7a423e = $('<div id="html_d1fd01053c7c41efa4337e956f7a423e" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Renegade Kerrobert HZ 1D2-18-4A10-7-32-23 W3M<br><strong>Operator: </strong>Renegade Petroleum<br><strong>Target Formation: </strong>Viking</div>')[0];
+                popup_6fc7137ca4d04860a7e17844fb90b41b.setContent(html_d1fd01053c7c41efa4337e956f7a423e);
+            
+
+            marker_9b51f182940643198161e5e2bb01a9ff.bindPopup(popup_6fc7137ca4d04860a7e17844fb90b41b);
+
+            
+        
+    
+
+            var marker_0473d5d8e89e4677bc684539e784e084 = L.marker(
+                [51.5895,-109.147813],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_f5fe95aa646a49f98163f0734b7af156 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0473d5d8e89e4677bc684539e784e084.setIcon(icon_f5fe95aa646a49f98163f0734b7af156);
+            
+    
+            var popup_c047ddf1d0a64085b02f3157c551f9ed = L.popup({maxWidth: '650'});
+
+            
+                var html_ad0d04d50541488b82e527a4e0cb7925 = $('<div id="html_ad0d04d50541488b82e527a4e0cb7925" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Renegade Lucky Hills Hz 1C16-22-4C8-27-30-23 W3M<br><strong>Operator: </strong>Renegade Petroleum<br><strong>Target Formation: </strong>Viking</div>')[0];
+                popup_c047ddf1d0a64085b02f3157c551f9ed.setContent(html_ad0d04d50541488b82e527a4e0cb7925);
+            
+
+            marker_0473d5d8e89e4677bc684539e784e084.bindPopup(popup_c047ddf1d0a64085b02f3157c551f9ed);
+
+            
+        
+    
+
+            var marker_1a6e737ea5694556b8b029981e32e688 = L.marker(
+                [51.589453,-109.364554],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_337cf97b15ba4d66b5f5dd5371eb36ab = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1a6e737ea5694556b8b029981e32e688.setIcon(icon_337cf97b15ba4d66b5f5dd5371eb36ab);
+            
+    
+            var popup_ee6eca946a164e80b38002acdc52cd3b = L.popup({maxWidth: '650'});
+
+            
+                var html_37fbb27f009745039a79ce1f5b4af9fa = $('<div id="html_37fbb27f009745039a79ce1f5b4af9fa" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Renegade Whiteside Hz 1B15-19-3B13-19-30-24 W3M<br><strong>Operator: </strong>Renegade Petroleum<br><strong>Target Formation: </strong>Viking</div>')[0];
+                popup_ee6eca946a164e80b38002acdc52cd3b.setContent(html_37fbb27f009745039a79ce1f5b4af9fa);
+            
+
+            marker_1a6e737ea5694556b8b029981e32e688.bindPopup(popup_ee6eca946a164e80b38002acdc52cd3b);
+
+            
+        
+    
+
+            var marker_cb8576cdfb0c44a6951684403533c394 = L.marker(
+                [49.670099,-102.641572],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_2038bdbf4ac84f4899177e294fd3c871 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cb8576cdfb0c44a6951684403533c394.setIcon(icon_2038bdbf4ac84f4899177e294fd3c871);
+            
+    
+            var popup_d4a62167f5a24ee69d9e5a836bc4d98f = L.popup({maxWidth: '500'});
+
+            
+                var html_b4fa4413323e4131a2fdd204a79f5675 = $('<div id="html_b4fa4413323e4131a2fdd204a79f5675" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 2B1-29/3B1-20-008-05 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_d4a62167f5a24ee69d9e5a836bc4d98f.setContent(html_b4fa4413323e4131a2fdd204a79f5675);
+            
+
+            marker_cb8576cdfb0c44a6951684403533c394.bindPopup(popup_d4a62167f5a24ee69d9e5a836bc4d98f);
+
+            
+        
+    
+
+            var marker_2bafc5e9c7ce4c7c98e3fa75c5648e1a = L.marker(
+                [49.651905,-103.025473],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_a3f90ee9c1154c278656d8bf4019079a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2bafc5e9c7ce4c7c98e3fa75c5648e1a.setIcon(icon_a3f90ee9c1154c278656d8bf4019079a);
+            
+    
+            var popup_fae8e9c858b243449593bc09bfde333b = L.popup({maxWidth: '500'});
+
+            
+                var html_6b5fa47fa5bf48d09cb973e186e1f0f9 = $('<div id="html_6b5fa47fa5bf48d09cb973e186e1f0f9" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1D16-16/2C13-16-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_fae8e9c858b243449593bc09bfde333b.setContent(html_6b5fa47fa5bf48d09cb973e186e1f0f9);
+            
+
+            marker_2bafc5e9c7ce4c7c98e3fa75c5648e1a.bindPopup(popup_fae8e9c858b243449593bc09bfde333b);
+
+            
+        
+    
+
+            var marker_a2a834300b474eb78b0860f0e0966c2e = L.marker(
+                [49.684633,-102.98033],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_1eb1fe10ea7545ca8875f5c3354d8c8b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a2a834300b474eb78b0860f0e0966c2e.setIcon(icon_1eb1fe10ea7545ca8875f5c3354d8c8b);
+            
+    
+            var popup_4991ad86e32549999759c45629ba18c5 = L.popup({maxWidth: '500'});
+
+            
+                var html_b6d2ca3878dc466eb5ea8a4cff84216c = $('<div id="html_b6d2ca3878dc466eb5ea8a4cff84216c" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1A1-35--2C13-36-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_4991ad86e32549999759c45629ba18c5.setContent(html_b6d2ca3878dc466eb5ea8a4cff84216c);
+            
+
+            marker_a2a834300b474eb78b0860f0e0966c2e.bindPopup(popup_4991ad86e32549999759c45629ba18c5);
+
+            
+        
+    
+
+            var marker_02f0899eb6ea4d8f9db7487305be7b95 = L.marker(
+                [49.691854,-103.064779],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_be6463eef4dc4cfaaacb5e308e34037a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_02f0899eb6ea4d8f9db7487305be7b95.setIcon(icon_be6463eef4dc4cfaaacb5e308e34037a);
+            
+    
+            var popup_885bc7a4a98542e2afa206067dfcf8d3 = L.popup({maxWidth: '500'});
+
+            
+                var html_12466e33540e484e885076634fd26db8 = $('<div id="html_12466e33540e484e885076634fd26db8" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 3B12-32--1C10-31-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_885bc7a4a98542e2afa206067dfcf8d3.setContent(html_12466e33540e484e885076634fd26db8);
+            
+
+            marker_02f0899eb6ea4d8f9db7487305be7b95.bindPopup(popup_885bc7a4a98542e2afa206067dfcf8d3);
+
+            
+        
+    
+
+            var marker_1c649662381d4acf95475af58fbcf84a = L.marker(
+                [49.637259,-102.997082],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_e58ebd55273e4c66af13a8e852bf1b25 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1c649662381d4acf95475af58fbcf84a.setIcon(icon_e58ebd55273e4c66af13a8e852bf1b25);
+            
+    
+            var popup_6812478b36e64cd7a4a34dd9aab87957 = L.popup({maxWidth: '500'});
+
+            
+                var html_dd2b4d64856b4b1d8e7af22f54223e69 = $('<div id="html_dd2b4d64856b4b1d8e7af22f54223e69" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 2B13-11--2A16-11-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_6812478b36e64cd7a4a34dd9aab87957.setContent(html_dd2b4d64856b4b1d8e7af22f54223e69);
+            
+
+            marker_1c649662381d4acf95475af58fbcf84a.bindPopup(popup_6812478b36e64cd7a4a34dd9aab87957);
+
+            
+        
+    
+
+            var marker_7a136983b63d43598af98ed6cbd6bccb = L.marker(
+                [49.633639,-102.997081],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_a7ac1be9e4994371913a0ff705525b8f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7a136983b63d43598af98ed6cbd6bccb.setIcon(icon_a7ac1be9e4994371913a0ff705525b8f);
+            
+    
+            var popup_b587295c53c54b0abaf0522d264f36f0 = L.popup({maxWidth: '500'});
+
+            
+                var html_1db93e3b57f2418393d51dab50e65164 = $('<div id="html_1db93e3b57f2418393d51dab50e65164" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 2B12-11-2A9-11-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_b587295c53c54b0abaf0522d264f36f0.setContent(html_1db93e3b57f2418393d51dab50e65164);
+            
+
+            marker_7a136983b63d43598af98ed6cbd6bccb.bindPopup(popup_b587295c53c54b0abaf0522d264f36f0);
+
+            
+        
+    
+
+            var marker_52e433cc3205499fa151771f93f4c2a7 = L.marker(
+                [49.611844,-103.217301],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_4dea2d9f42044b9fb8c635512729d297 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_52e433cc3205499fa151771f93f4c2a7.setIcon(icon_4dea2d9f42044b9fb8c635512729d297);
+            
+    
+            var popup_97eaef919667434bb3223a6b553f9c37 = L.popup({maxWidth: '500'});
+
+            
+                var html_222986256b5a42b1a8d801e83dbd64b2 = $('<div id="html_222986256b5a42b1a8d801e83dbd64b2" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1B3-06--3B3-31-008-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_97eaef919667434bb3223a6b553f9c37.setContent(html_222986256b5a42b1a8d801e83dbd64b2);
+            
+
+            marker_52e433cc3205499fa151771f93f4c2a7.bindPopup(popup_97eaef919667434bb3223a6b553f9c37);
+
+            
+        
+    
+
+            var marker_8332e48c163a4c76acfa2b3f54432acc = L.marker(
+                [49.611825,-103.222895],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_7c0fb2d0f60d4c5085da531fb3701bae = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8332e48c163a4c76acfa2b3f54432acc.setIcon(icon_7c0fb2d0f60d4c5085da531fb3701bae);
+            
+    
+            var popup_ee24cede67624ce3baac2f125c7c88fc = L.popup({maxWidth: '500'});
+
+            
+                var html_18347b20a7074a5cb62a21db085e32d7 = $('<div id="html_18347b20a7074a5cb62a21db085e32d7" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 2A4-06--3A4-31-008-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_ee24cede67624ce3baac2f125c7c88fc.setContent(html_18347b20a7074a5cb62a21db085e32d7);
+            
+
+            marker_8332e48c163a4c76acfa2b3f54432acc.bindPopup(popup_ee24cede67624ce3baac2f125c7c88fc);
+
+            
+        
+    
+
+            var marker_dae8a41f164f4e9c91752e562e839ec3 = L.marker(
+                [49.611881,-103.132552],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_40119f94857d486c9ba2b6a75457cafb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dae8a41f164f4e9c91752e562e839ec3.setIcon(icon_40119f94857d486c9ba2b6a75457cafb);
+            
+    
+            var popup_6235fd8795344925a192cc92920b90fa = L.popup({maxWidth: '500'});
+
+            
+                var html_bc9e5e1d7a6d4f70b69e3a3134c6b0e6 = $('<div id="html_bc9e5e1d7a6d4f70b69e3a3134c6b0e6" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 7C4-02--4C4-03-008-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_6235fd8795344925a192cc92920b90fa.setContent(html_bc9e5e1d7a6d4f70b69e3a3134c6b0e6);
+            
+
+            marker_dae8a41f164f4e9c91752e562e839ec3.bindPopup(popup_6235fd8795344925a192cc92920b90fa);
+
+            
+        
+    
+
+            var marker_18eabdd76c6a47f5ae9d610043b10dd5 = L.marker(
+                [49.662748,-103.132598],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_371894ace9644c05905fa45fc8d939a7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_18eabdd76c6a47f5ae9d610043b10dd5.setIcon(icon_371894ace9644c05905fa45fc8d939a7);
+            
+    
+            var popup_2463b26d4b604e2a9775c02b7a43f171 = L.popup({maxWidth: '500'});
+
+            
+                var html_2b2d12d4462e4c2ab931465dcbbf45ae = $('<div id="html_2b2d12d4462e4c2ab931465dcbbf45ae" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 3C12-23--2A16-23-008-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_2463b26d4b604e2a9775c02b7a43f171.setContent(html_2b2d12d4462e4c2ab931465dcbbf45ae);
+            
+
+            marker_18eabdd76c6a47f5ae9d610043b10dd5.bindPopup(popup_2463b26d4b604e2a9775c02b7a43f171);
+
+            
+        
+    
+
+            var marker_0fe33ad9d54441ec83874ea58d5315c4 = L.marker(
+                [49.691864,-103.155082],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_ab946a60fe7642719b0703e240b32a9b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0fe33ad9d54441ec83874ea58d5315c4.setIcon(icon_ab946a60fe7642719b0703e240b32a9b);
+            
+    
+            var popup_6d9641eeff794935a492c00c2caa4f60 = L.popup({maxWidth: '500'});
+
+            
+                var html_23b70b95abf3429c8d0b32e834b73732 = $('<div id="html_23b70b95abf3429c8d0b32e834b73732" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 3C12-34--4C12-33-008-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_6d9641eeff794935a492c00c2caa4f60.setContent(html_23b70b95abf3429c8d0b32e834b73732);
+            
+
+            marker_0fe33ad9d54441ec83874ea58d5315c4.bindPopup(popup_6d9641eeff794935a492c00c2caa4f60);
+
+            
+        
+    
+
+            var marker_aa5a75725c6a4b908be9098bafefb416 = L.marker(
+                [49.724537,-103.109952],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_2b566ac0ecda4083a211e4fde1bc1b54 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aa5a75725c6a4b908be9098bafefb416.setIcon(icon_2b566ac0ecda4083a211e4fde1bc1b54);
+            
+    
+            var popup_6fbeaa75953a49c9a3bbccdb2221fdaa = L.popup({maxWidth: '500'});
+
+            
+                var html_f30e8862f49d46ce9c4f5ac4ea2b6086 = $('<div id="html_f30e8862f49d46ce9c4f5ac4ea2b6086" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 6B13-12--1B13-11-009-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_6fbeaa75953a49c9a3bbccdb2221fdaa.setContent(html_f30e8862f49d46ce9c4f5ac4ea2b6086);
+            
+
+            marker_aa5a75725c6a4b908be9098bafefb416.bindPopup(popup_6fbeaa75953a49c9a3bbccdb2221fdaa);
+
+            
+        
+    
+
+            var marker_10f7bb0ebb04405d86c5a36707134e4a = L.marker(
+                [49.691864,-103.155082],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_7edd97d954ec4a6fa64739146408f1ac = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_10f7bb0ebb04405d86c5a36707134e4a.setIcon(icon_7edd97d954ec4a6fa64739146408f1ac);
+            
+    
+            var popup_7add92244de04d2f900b787775bbdaf2 = L.popup({maxWidth: '500'});
+
+            
+                var html_bddc4b8ecc2b4c54ade4c57584d13061 = $('<div id="html_bddc4b8ecc2b4c54ade4c57584d13061" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 7B12-34--3D8-34-008-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_7add92244de04d2f900b787775bbdaf2.setContent(html_bddc4b8ecc2b4c54ade4c57584d13061);
+            
+
+            marker_10f7bb0ebb04405d86c5a36707134e4a.bindPopup(popup_7add92244de04d2f900b787775bbdaf2);
+
+            
+        
+    
+
+            var marker_806d2ba488ee4ff09eacb59a094e8252 = L.marker(
+                [49.560801,-103.109944],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_e3b3e59e3c794989bb10249de3d60fa5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_806d2ba488ee4ff09eacb59a094e8252.setIcon(icon_e3b3e59e3c794989bb10249de3d60fa5);
+            
+    
+            var popup_f5f999f3334a4fa99761987d7fcfed9d = L.popup({maxWidth: '500'});
+
+            
+                var html_3ecc8b12d40646a381d254e7bf439ad0 = $('<div id="html_3ecc8b12d40646a381d254e7bf439ad0" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 2B12-13--1B12-14-007-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_f5f999f3334a4fa99761987d7fcfed9d.setContent(html_3ecc8b12d40646a381d254e7bf439ad0);
+            
+
+            marker_806d2ba488ee4ff09eacb59a094e8252.bindPopup(popup_f5f999f3334a4fa99761987d7fcfed9d);
+
+            
+        
+    
+
+            var marker_a49b5bdc917a4aeaaf7e5564c09c3a6c = L.marker(
+                [49.564426,-103.109948],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_eeebcd108b704ad584104d31d30564b6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a49b5bdc917a4aeaaf7e5564c09c3a6c.setIcon(icon_eeebcd108b704ad584104d31d30564b6);
+            
+    
+            var popup_786dda9384fe4a3fb621b2bc4cdc7c7f = L.popup({maxWidth: '500'});
+
+            
+                var html_516e6dc1d2cb497b8a3b39a3e4f87fa3 = $('<div id="html_516e6dc1d2cb497b8a3b39a3e4f87fa3" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 2C13-13--4C13-14-007-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_786dda9384fe4a3fb621b2bc4cdc7c7f.setContent(html_516e6dc1d2cb497b8a3b39a3e4f87fa3);
+            
+
+            marker_a49b5bdc917a4aeaaf7e5564c09c3a6c.bindPopup(popup_786dda9384fe4a3fb621b2bc4cdc7c7f);
+
+            
+        
+    
+
+            var marker_d5538f659d9e4f42befad579d11b3274 = L.marker(
+                [49.677387,-102.974483],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_94c09dd1bb3044d29114ae8d8c1a80a7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d5538f659d9e4f42befad579d11b3274.setIcon(icon_94c09dd1bb3044d29114ae8d8c1a80a7);
+            
+    
+            var popup_665f1342ef7f41a7bd7ee26e4db7e4a7 = L.popup({maxWidth: '500'});
+
+            
+                var html_bf0d67878ba447e7899324352316848c = $('<div id="html_bf0d67878ba447e7899324352316848c" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 3C12-25--2A16-25-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_665f1342ef7f41a7bd7ee26e4db7e4a7.setContent(html_bf0d67878ba447e7899324352316848c);
+            
+
+            marker_d5538f659d9e4f42befad579d11b3274.bindPopup(popup_665f1342ef7f41a7bd7ee26e4db7e4a7);
+
+            
+        
+    
+
+            var marker_880d3cd6b8834ad784eedcc7b401791a = L.marker(
+                [49.681006,-102.974476],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_e901d8466a0d4f25b4e6fd8571fd0d97 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_880d3cd6b8834ad784eedcc7b401791a.setIcon(icon_e901d8466a0d4f25b4e6fd8571fd0d97);
+            
+    
+            var popup_63fb95d3b6074499b4cd42887d4f89f8 = L.popup({maxWidth: '500'});
+
+            
+                var html_e698a736a2b94b0db332a051d42c531d = $('<div id="html_e698a736a2b94b0db332a051d42c531d" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 2B13-25--1B13-26-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_63fb95d3b6074499b4cd42887d4f89f8.setContent(html_e698a736a2b94b0db332a051d42c531d);
+            
+
+            marker_880d3cd6b8834ad784eedcc7b401791a.bindPopup(popup_63fb95d3b6074499b4cd42887d4f89f8);
+
+            
+        
+    
+
+            var marker_c400573c2f6c4a1ea01cca285af5d67a = L.marker(
+                [49.670097,-102.697842],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_039d89ea9b8b4bff9daabb983f4a28bd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c400573c2f6c4a1ea01cca285af5d67a.setIcon(icon_039d89ea9b8b4bff9daabb983f4a28bd);
+            
+    
+            var popup_3afb1007f7254d23b15ee16753f3d130 = L.popup({maxWidth: '500'});
+
+            
+                var html_83e02e26d92a42a58ff666b91a44a4be = $('<div id="html_83e02e26d92a42a58ff666b91a44a4be" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1A3-25--4A3-24-008-06 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_3afb1007f7254d23b15ee16753f3d130.setContent(html_83e02e26d92a42a58ff666b91a44a4be);
+            
+
+            marker_c400573c2f6c4a1ea01cca285af5d67a.bindPopup(popup_3afb1007f7254d23b15ee16753f3d130);
+
+            
+        
+    
+
+            var marker_89cccca6fa13465fb0a572eeb52c363c = L.marker(
+                [49.564435,-102.974442],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_da9d937978ff4f61b008637173fab3fc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_89cccca6fa13465fb0a572eeb52c363c.setIcon(icon_da9d937978ff4f61b008637173fab3fc);
+            
+    
+            var popup_505a513b7f204dffbbb7014c8ac4752c = L.popup({maxWidth: '500'});
+
+            
+                var html_870216add3ba47f5ab98be30f23e930c = $('<div id="html_870216add3ba47f5ab98be30f23e930c" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 4C13-13--1C13-12-007-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_505a513b7f204dffbbb7014c8ac4752c.setContent(html_870216add3ba47f5ab98be30f23e930c);
+            
+
+            marker_89cccca6fa13465fb0a572eeb52c363c.bindPopup(popup_505a513b7f204dffbbb7014c8ac4752c);
+
+            
+        
+    
+
+            var marker_89e48ce880a44e6d8bdff52f9a3de1e7 = L.marker(
+                [49.818915,-102.974525],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_8e5ec21b3b684e82939775134cc019cc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_89e48ce880a44e6d8bdff52f9a3de1e7.setIcon(icon_8e5ec21b3b684e82939775134cc019cc);
+            
+    
+            var popup_1a26f77acf2346a2a8eedb9b8208b835 = L.popup({maxWidth: '500'});
+
+            
+                var html_b4a7d5d8a5b04d4b8828218b8a5699a3 = $('<div id="html_b4a7d5d8a5b04d4b8828218b8a5699a3" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 4B5-13--4B5-14-010-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_1a26f77acf2346a2a8eedb9b8208b835.setContent(html_b4a7d5d8a5b04d4b8828218b8a5699a3);
+            
+
+            marker_89e48ce880a44e6d8bdff52f9a3de1e7.bindPopup(popup_1a26f77acf2346a2a8eedb9b8208b835);
+
+            
+        
+    
+
+            var marker_7636e1b073644e30a19720c20746f2db = L.marker(
+                [49.77917,-102.82228],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_28002f6e9db140efa1849093b6e2163c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7636e1b073644e30a19720c20746f2db.setIcon(icon_28002f6e9db140efa1849093b6e2163c);
+            
+    
+            var popup_709cd112424144029bdd45fae054b101 = L.popup({maxWidth: '500'});
+
+            
+                var html_3e034a7a3ac341f1b6cad83119c85894 = $('<div id="html_3e034a7a3ac341f1b6cad83119c85894" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1D9-36--2D9-31-009-07 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_709cd112424144029bdd45fae054b101.setContent(html_3e034a7a3ac341f1b6cad83119c85894);
+            
+
+            marker_7636e1b073644e30a19720c20746f2db.bindPopup(popup_709cd112424144029bdd45fae054b101);
+
+            
+        
+    
+
+            var marker_9c9bf325d19f44c19664426b4a95b270 = L.marker(
+                [49.764763,-102.957759],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_f6147016fc2a42a88f96a6504e5cc7a2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9c9bf325d19f44c19664426b4a95b270.setIcon(icon_f6147016fc2a42a88f96a6504e5cc7a2);
+            
+    
+            var popup_21980a8bd3924d98b19d8fec3411354a = L.popup({maxWidth: '500'});
+
+            
+                var html_74d2f4d9ad2d4fa6a148a8aa2c69669a = $('<div id="html_74d2f4d9ad2d4fa6a148a8aa2c69669a" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 4A9-25--1C12-25-009-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_21980a8bd3924d98b19d8fec3411354a.setContent(html_74d2f4d9ad2d4fa6a148a8aa2c69669a);
+            
+
+            marker_9c9bf325d19f44c19664426b4a95b270.bindPopup(popup_21980a8bd3924d98b19d8fec3411354a);
+
+            
+        
+    
+
+            var marker_dde77a71f6c94751adacbb88a0bf5829 = L.marker(
+                [49.626338,-102.935125],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_481a997509134c008479251c03f6da3e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dde77a71f6c94751adacbb88a0bf5829.setIcon(icon_481a997509134c008479251c03f6da3e);
+            
+    
+            var popup_8f513c43e05c437481e5bee8dd70f295 = L.popup({maxWidth: '500'});
+
+            
+                var html_4829a3155a7949f3bc719ea5f2637cba = $('<div id="html_4829a3155a7949f3bc719ea5f2637cba" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 3A1-07--4B1-06-008-07 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_8f513c43e05c437481e5bee8dd70f295.setContent(html_4829a3155a7949f3bc719ea5f2637cba);
+            
+
+            marker_dde77a71f6c94751adacbb88a0bf5829.bindPopup(popup_8f513c43e05c437481e5bee8dd70f295);
+
+            
+        
+    
+
+            var marker_0b4d3cb76af94ebfb5eeea8f8933efd2 = L.marker(
+                [49.728379,-103.03105],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_4bd63e154bd64d49885b4c6371b59c73 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0b4d3cb76af94ebfb5eeea8f8933efd2.setIcon(icon_4bd63e154bd64d49885b4c6371b59c73);
+            
+    
+            var popup_d4589764229a44cb8be67f132dcfa1c9 = L.popup({maxWidth: '500'});
+
+            
+                var html_9b7336ae917e4c6aa6c8b304a7fa64f2 = $('<div id="html_9b7336ae917e4c6aa6c8b304a7fa64f2" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1A2-16--1D15-16-009-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_d4589764229a44cb8be67f132dcfa1c9.setContent(html_9b7336ae917e4c6aa6c8b304a7fa64f2);
+            
+
+            marker_0b4d3cb76af94ebfb5eeea8f8933efd2.bindPopup(popup_d4589764229a44cb8be67f132dcfa1c9);
+
+            
+        
+    
+
+            var marker_f4c980b1f4cd48348457d9581f30fe37 = L.marker(
+                [49.72838,-103.036623],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_d4bb3e9012574a16801076b838587273 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f4c980b1f4cd48348457d9581f30fe37.setIcon(icon_d4bb3e9012574a16801076b838587273);
+            
+    
+            var popup_36bf96c42b724a1e8d8006946a0df578 = L.popup({maxWidth: '500'});
+
+            
+                var html_dfbbefb3478e4d8cbd3c696406b2b1d8 = $('<div id="html_dfbbefb3478e4d8cbd3c696406b2b1d8" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1A3-16-1D14-16-009-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_36bf96c42b724a1e8d8006946a0df578.setContent(html_dfbbefb3478e4d8cbd3c696406b2b1d8);
+            
+
+            marker_f4c980b1f4cd48348457d9581f30fe37.bindPopup(popup_36bf96c42b724a1e8d8006946a0df578);
+
+            
+        
+    
+
+            var marker_317eb9a9ff454188b8a5f506daeaa144 = L.marker(
+                [49.782785,-103.019685],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_b1c2dd00b39e4737b50704bf7bd8a054 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_317eb9a9ff454188b8a5f506daeaa144.setIcon(icon_b1c2dd00b39e4737b50704bf7bd8a054);
+            
+    
+            var popup_ea3a19adba6b43b78d3e378a64193a85 = L.popup({maxWidth: '500'});
+
+            
+                var html_56931109af6e45be812da85e9147ec4f = $('<div id="html_56931109af6e45be812da85e9147ec4f" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 4C13-34--1C13-33-009-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_ea3a19adba6b43b78d3e378a64193a85.setContent(html_56931109af6e45be812da85e9147ec4f);
+            
+
+            marker_317eb9a9ff454188b8a5f506daeaa144.bindPopup(popup_ea3a19adba6b43b78d3e378a64193a85);
+
+            
+        
+    
+
+            var marker_a1a6979eebb9425889b21dd8a5e6a7c4 = L.marker(
+                [49.524581,-103.048086],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_04509e0cf49343d9aa0cb6309fa0b744 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a1a6979eebb9425889b21dd8a5e6a7c4.setIcon(icon_04509e0cf49343d9aa0cb6309fa0b744);
+            
+    
+            var popup_991b4fb93ab947cab58b514be561265b = L.popup({maxWidth: '500'});
+
+            
+                var html_4fe1160ea09f4775a14f5f039278a070 = $('<div id="html_4fe1160ea09f4775a14f5f039278a070" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1D1-05--3B4-05-007-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_991b4fb93ab947cab58b514be561265b.setContent(html_4fe1160ea09f4775a14f5f039278a070);
+            
+
+            marker_a1a6979eebb9425889b21dd8a5e6a7c4.bindPopup(popup_991b4fb93ab947cab58b514be561265b);
+
+            
+        
+    
+
+            var marker_769445b8e25245a69065d1ef23ced09e = L.marker(
+                [52.725615,-114.572392],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_00731e46a13a4144b14a87bef7d835e3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_769445b8e25245a69065d1ef23ced09e.setIcon(icon_00731e46a13a4144b14a87bef7d835e3);
+            
+    
+            var popup_133ff4c87d054303b0a4fa08d76050f4 = L.popup({maxWidth: '650'});
+
+            
+                var html_2e866076086e414f991f0960813c1f87 = $('<div id="html_2e866076086e414f991f0960813c1f87" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Regent et al Hz Wilsonck 14-19-43-4 W5<br><strong>Operator: </strong>Regent Resources<br><strong>Target Formation: </strong>Cardium</div>')[0];
+                popup_133ff4c87d054303b0a4fa08d76050f4.setContent(html_2e866076086e414f991f0960813c1f87);
+            
+
+            marker_769445b8e25245a69065d1ef23ced09e.bindPopup(popup_133ff4c87d054303b0a4fa08d76050f4);
+
+            
+        
+    
+
+            var marker_761a5950875f492aa8bd9ea5ca8b90f3 = L.marker(
+                [52.798332,-114.530115],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_45911d3517e74d2ea6034e85630179da = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_761a5950875f492aa8bd9ea5ca8b90f3.setIcon(icon_45911d3517e74d2ea6034e85630179da);
+            
+    
+            var popup_c6b2a7243afc4fa399e7bb0596a4d145 = L.popup({maxWidth: '650'});
+
+            
+                var html_9521ece3cfa64262a47be39e1b239132 = $('<div id="html_9521ece3cfa64262a47be39e1b239132" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Regent et al Hz Minhik 13-16-44-4 W5<br><strong>Operator: </strong>Regent Resources<br><strong>Target Formation: </strong>Cardium</div>')[0];
+                popup_c6b2a7243afc4fa399e7bb0596a4d145.setContent(html_9521ece3cfa64262a47be39e1b239132);
+            
+
+            marker_761a5950875f492aa8bd9ea5ca8b90f3.bindPopup(popup_c6b2a7243afc4fa399e7bb0596a4d145);
+
+            
+        
+    
+
+            var marker_e5f68c6370ff497ba46c0a94f3ac95a3 = L.marker(
+                [52.740265,-114.614976],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_8dd79b722c994dba94de94288cccd1f3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e5f68c6370ff497ba46c0a94f3ac95a3.setIcon(icon_8dd79b722c994dba94de94288cccd1f3);
+            
+    
+            var popup_cb20ad04147443aa889ce18e02ebbebb = L.popup({maxWidth: '650'});
+
+            
+                var html_6eec29b9aba7485d8a623c282eb9baa4 = $('<div id="html_6eec29b9aba7485d8a623c282eb9baa4" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>Regent Wilsonck 15-26-43-5 W5<br><strong>Operator: </strong>Regent Resources<br><strong>Target Formation: </strong>Cardium</div>')[0];
+                popup_cb20ad04147443aa889ce18e02ebbebb.setContent(html_6eec29b9aba7485d8a623c282eb9baa4);
+            
+
+            marker_e5f68c6370ff497ba46c0a94f3ac95a3.bindPopup(popup_cb20ad04147443aa889ce18e02ebbebb);
+
+            
+        
+    
+
+            var marker_c293280bd75c43c89dbb336d5087039b = L.marker(
+                [49.757439,-103.266334],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_6eb5169b020d4a45bfec49befa24d95b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c293280bd75c43c89dbb336d5087039b.setIcon(icon_6eb5169b020d4a45bfec49befa24d95b);
+            
+    
+            var popup_8130b188713147cc882b1fe0a30507be = L.popup({maxWidth: '500'});
+
+            
+                var html_b2e59ceb21774694b229c5c38e322bd0 = $('<div id="html_b2e59ceb21774694b229c5c38e322bd0" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 3C4-26--3C4-27-009-10 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_8130b188713147cc882b1fe0a30507be.setContent(html_b2e59ceb21774694b229c5c38e322bd0);
+            
+
+            marker_c293280bd75c43c89dbb336d5087039b.bindPopup(popup_8130b188713147cc882b1fe0a30507be);
+
+            
+        
+    
+
+            var marker_52cc3c20e30948e1b9b0e7a17c82c1a0 = L.marker(
+                [49.804852,-103.065561],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_3b9bdf0d619a4fa8b29a7ff977fdc693 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_52cc3c20e30948e1b9b0e7a17c82c1a0.setIcon(icon_3b9bdf0d619a4fa8b29a7ff977fdc693);
+            
+    
+            var popup_fa7297c9866949b98fc280a4a9d2e922 = L.popup({maxWidth: '500'});
+
+            
+                var html_6d1dfe888354440dabdb27330605e094 = $('<div id="html_6d1dfe888354440dabdb27330605e094" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 3B5-08--4C4-07-010-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_fa7297c9866949b98fc280a4a9d2e922.setContent(html_6d1dfe888354440dabdb27330605e094);
+            
+
+            marker_52cc3c20e30948e1b9b0e7a17c82c1a0.bindPopup(popup_fa7297c9866949b98fc280a4a9d2e922);
+
+            
+        
+    
+
+            var marker_cbab3bd61ffc4ec88f5a5de8e0b8437d = L.marker(
+                [49.706497,-103.177626],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_efa20adf4f1642e2bc5d246fa19cc1c1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cbab3bd61ffc4ec88f5a5de8e0b8437d.setIcon(icon_efa20adf4f1642e2bc5d246fa19cc1c1);
+            
+    
+            var popup_08403ff586b04e589c890ddb569c9b10 = L.popup({maxWidth: '500'});
+
+            
+                var html_e041f171424542d7b901d6eae30c095c = $('<div id="html_e041f171424542d7b901d6eae30c095c" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 3C12-04--4C12-05-009-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_08403ff586b04e589c890ddb569c9b10.setContent(html_e041f171424542d7b901d6eae30c095c);
+            
+
+            marker_cbab3bd61ffc4ec88f5a5de8e0b8437d.bindPopup(popup_08403ff586b04e589c890ddb569c9b10);
+
+            
+        
+    
+
+            var marker_77d6a3c2df1c4d1b8b0501b70043180d = L.marker(
+                [49.710114,-102.89556],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_b03152d9c6f241e1bf31257d7b82b84a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_77d6a3c2df1c4d1b8b0501b70043180d.setIcon(icon_b03152d9c6f241e1bf31257d7b82b84a);
+            
+    
+            var popup_c5378da63fb24098af76024bf5119495 = L.popup({maxWidth: '500'});
+
+            
+                var html_9a33bde50e4849498808b9a408e0cd31 = $('<div id="html_9a33bde50e4849498808b9a408e0cd31" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 3C15-04--2C15-09-009-07 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_c5378da63fb24098af76024bf5119495.setContent(html_9a33bde50e4849498808b9a408e0cd31);
+            
+
+            marker_77d6a3c2df1c4d1b8b0501b70043180d.bindPopup(popup_c5378da63fb24098af76024bf5119495);
+
+            
+        
+    
+
+            var marker_47e1e3affa084f9b8e03fabb1cd25d7f = L.marker(
+                [49.720926,-102.867395],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_48f9b2d5358549e7a43cc4ad3f15b9da = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_47e1e3affa084f9b8e03fabb1cd25d7f.setIcon(icon_48f9b2d5358549e7a43cc4ad3f15b9da);
+            
+    
+            var popup_c6162943f4a242e28d13bd3999d22957 = L.popup({maxWidth: '500'});
+
+            
+                var html_96f028eb6aed419188a50f84162ec1df = $('<div id="html_96f028eb6aed419188a50f84162ec1df" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 4D9-10--3D9-11-009-07 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_c6162943f4a242e28d13bd3999d22957.setContent(html_96f028eb6aed419188a50f84162ec1df);
+            
+
+            marker_47e1e3affa084f9b8e03fabb1cd25d7f.bindPopup(popup_c6162943f4a242e28d13bd3999d22957);
+
+            
+        
+    
+
+            var marker_49f09568c3d34674a3fc8833068e5c17 = L.marker(
+                [49.753692,-102.844825],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_f127e4b1cbfb4b56be578e081ad0dcb8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_49f09568c3d34674a3fc8833068e5c17.setIcon(icon_f127e4b1cbfb4b56be578e081ad0dcb8);
+            
+    
+            var popup_6e94e63049b44bd9a346720f61ec8cbc = L.popup({maxWidth: '500'});
+
+            
+                var html_02833daba8ca4fdc8dce97b5e834cb28 = $('<div id="html_02833daba8ca4fdc8dce97b5e834cb28" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 3D16-23--3A1-23-009-07 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_6e94e63049b44bd9a346720f61ec8cbc.setContent(html_02833daba8ca4fdc8dce97b5e834cb28);
+            
+
+            marker_49f09568c3d34674a3fc8833068e5c17.bindPopup(popup_6e94e63049b44bd9a346720f61ec8cbc);
+
+            
+        
+    
+
+            var marker_a53364ac666b4411bb7ad080e4c2dc0b = L.marker(
+                [49.753692,-102.844825],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_b7e49a857b8e4281a86907853cf2f8ff = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a53364ac666b4411bb7ad080e4c2dc0b.setIcon(icon_b7e49a857b8e4281a86907853cf2f8ff);
+            
+    
+            var popup_2723389a229041dcb7ed2fc14fbf4567 = L.popup({maxWidth: '500'});
+
+            
+                var html_eeb87e15a56943d2a294c0f2ab001dd3 = $('<div id="html_eeb87e15a56943d2a294c0f2ab001dd3" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 7D16-23--3D16-26-009-07 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_2723389a229041dcb7ed2fc14fbf4567.setContent(html_eeb87e15a56943d2a294c0f2ab001dd3);
+            
+
+            marker_a53364ac666b4411bb7ad080e4c2dc0b.bindPopup(popup_2723389a229041dcb7ed2fc14fbf4567);
+
+            
+        
+    
+
+            var marker_fb18fa7533e2403ebbd88b42206149dc = L.marker(
+                [49.62275,-103.076238],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_cad3174a04a94d859b2b0fbd33938c2e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fb18fa7533e2403ebbd88b42206149dc.setIcon(icon_cad3174a04a94d859b2b0fbd33938c2e);
+            
+    
+            var popup_1d1a790358614f0e9ed271d12be9f20d = L.popup({maxWidth: '500'});
+
+            
+                var html_9061df0a42a74029baa832d3f27ee999 = $('<div id="html_9061df0a42a74029baa832d3f27ee999" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 3D15-06--2D7-07-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_1d1a790358614f0e9ed271d12be9f20d.setContent(html_9061df0a42a74029baa832d3f27ee999);
+            
+
+            marker_fb18fa7533e2403ebbd88b42206149dc.bindPopup(popup_1d1a790358614f0e9ed271d12be9f20d);
+
+            
+        
+    
+
+            var marker_b65c431ea9724818bb9caab388f5c3df = L.marker(
+                [49.717316,-103.183456],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_4fdbae68456b4e1c9379dd808c392087 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b65c431ea9724818bb9caab388f5c3df.setIcon(icon_4fdbae68456b4e1c9379dd808c392087);
+            
+    
+            var popup_12c9919dee4e48ee8c6748e4782e989a = L.popup({maxWidth: '500'});
+
+            
+                var html_3c8564a22530408da52a7f6999e9d408 = $('<div id="html_3c8564a22530408da52a7f6999e9d408" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 4D8-08--1B12-08-009-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_12c9919dee4e48ee8c6748e4782e989a.setContent(html_3c8564a22530408da52a7f6999e9d408);
+            
+
+            marker_b65c431ea9724818bb9caab388f5c3df.bindPopup(popup_12c9919dee4e48ee8c6748e4782e989a);
+
+            
+        
+    
+
+            var marker_6e7c4aa6545f4c1584f2cec1f41833db = L.marker(
+                [49.651905,-103.025473],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_752089cc69c84f28904b1a4e58654847 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6e7c4aa6545f4c1584f2cec1f41833db.setIcon(icon_752089cc69c84f28904b1a4e58654847);
+            
+    
+            var popup_2f518b0c18c44396b7bf274cc844d3c6 = L.popup({maxWidth: '500'});
+
+            
+                var html_d587e785b28648249a4f9b94d3ffd2d0 = $('<div id="html_d587e785b28648249a4f9b94d3ffd2d0" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1A16-16--2B13-16-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_2f518b0c18c44396b7bf274cc844d3c6.setContent(html_d587e785b28648249a4f9b94d3ffd2d0);
+            
+
+            marker_6e7c4aa6545f4c1584f2cec1f41833db.bindPopup(popup_2f518b0c18c44396b7bf274cc844d3c6);
+
+            
+        
+    
+
+            var marker_0cd9ad10d06b48e39dc7c0bc8247429d = L.marker(
+                [49.65188,-102.974495],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_6d16775ab44b4344953499649d74cb48 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0cd9ad10d06b48e39dc7c0bc8247429d.setIcon(icon_6d16775ab44b4344953499649d74cb48);
+            
+    
+            var popup_cb9def32f22843d3af279f5e2a8491e3 = L.popup({maxWidth: '500'});
+
+            
+                var html_da8063859a2f4091b09891330feaba95 = $('<div id="html_da8063859a2f4091b09891330feaba95" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 5D13-13--2C14-24-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_cb9def32f22843d3af279f5e2a8491e3.setContent(html_da8063859a2f4091b09891330feaba95);
+            
+
+            marker_0cd9ad10d06b48e39dc7c0bc8247429d.bindPopup(popup_cb9def32f22843d3af279f5e2a8491e3);
+
+            
+        
+    
+
+            var marker_7e9f4bd022f44fc4a86d4d1055e0edc3 = L.marker(
+                [49.691854,-103.064779],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_069255ad5c194547a1583b2ded491e8d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7e9f4bd022f44fc4a86d4d1055e0edc3.setIcon(icon_069255ad5c194547a1583b2ded491e8d);
+            
+    
+            var popup_61d648416e594e399bfa8f153618caba = L.popup({maxWidth: '500'});
+
+            
+                var html_361d0aab069444759c1830157a8888e1 = $('<div id="html_361d0aab069444759c1830157a8888e1" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 4C12-32--2A16-32-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_61d648416e594e399bfa8f153618caba.setContent(html_361d0aab069444759c1830157a8888e1);
+            
+
+            marker_7e9f4bd022f44fc4a86d4d1055e0edc3.bindPopup(popup_61d648416e594e399bfa8f153618caba);
+
+            
+        
+    
+
+            var marker_0170a1d46ebe47f997e41c822c3894e0 = L.marker(
+                [49.670129,-103.036683],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_bbc31e8c0a014f48b3f07ccb02ee6393 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0170a1d46ebe47f997e41c822c3894e0.setIcon(icon_bbc31e8c0a014f48b3f07ccb02ee6393);
+            
+    
+            var popup_26f2575a52ea477f8639d7d8925c445c = L.popup({maxWidth: '500'});
+
+            
+                var html_b7b1438f99874314bef27b0b935cb43d = $('<div id="html_b7b1438f99874314bef27b0b935cb43d" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 10B3-28--3B3-21-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_26f2575a52ea477f8639d7d8925c445c.setContent(html_b7b1438f99874314bef27b0b935cb43d);
+            
+
+            marker_0170a1d46ebe47f997e41c822c3894e0.bindPopup(popup_26f2575a52ea477f8639d7d8925c445c);
+
+            
+        
+    
+
+            var marker_d6a79be9230b4d4596182fbe76c219c2 = L.marker(
+                [49.684616,-103.064791],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_9769d6b09c4749ccbc10049f0e7ab6d4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d6a79be9230b4d4596182fbe76c219c2.setIcon(icon_9769d6b09c4749ccbc10049f0e7ab6d4);
+            
+    
+            var popup_aa4057b0a462488ea70113434e0c025b = L.popup({maxWidth: '500'});
+
+            
+                var html_a8f99d5fd69d41a48466b6fbeb88bc28 = $('<div id="html_a8f99d5fd69d41a48466b6fbeb88bc28" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 7B4-32--4C4-31-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_aa4057b0a462488ea70113434e0c025b.setContent(html_a8f99d5fd69d41a48466b6fbeb88bc28);
+            
+
+            marker_d6a79be9230b4d4596182fbe76c219c2.bindPopup(popup_aa4057b0a462488ea70113434e0c025b);
+
+            
+        
+    
+
+            var marker_6734eaa0579249cb91988d49090517fe = L.marker(
+                [49.673768,-102.974489],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_b74eb219fdb744a9a50769ba58d5880a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6734eaa0579249cb91988d49090517fe.setIcon(icon_b74eb219fdb744a9a50769ba58d5880a);
+            
+    
+            var popup_daa0f43356f74f7cad43f75fab37cd9c = L.popup({maxWidth: '500'});
+
+            
+                var html_fd424aed0d4e46069b460d62149fe83f = $('<div id="html_fd424aed0d4e46069b460d62149fe83f" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 2B5-25--2A8-25-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_daa0f43356f74f7cad43f75fab37cd9c.setContent(html_fd424aed0d4e46069b460d62149fe83f);
+            
+
+            marker_6734eaa0579249cb91988d49090517fe.bindPopup(popup_daa0f43356f74f7cad43f75fab37cd9c);
+
+            
+        
+    
+
+            var marker_accce451d6444ef6b0c9f5dfbd15f9ce = L.marker(
+                [49.673768,-102.974489],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_fae26ce921aa46ce87154c0f56ac25f2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_accce451d6444ef6b0c9f5dfbd15f9ce.setIcon(icon_fae26ce921aa46ce87154c0f56ac25f2);
+            
+    
+            var popup_b41f918226604c80a7f54e1d34707062 = L.popup({maxWidth: '500'});
+
+            
+                var html_d2bdd665ac3341b784e35e4e94cfe938 = $('<div id="html_d2bdd665ac3341b784e35e4e94cfe938" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 11B5-25--1B5-26-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_b41f918226604c80a7f54e1d34707062.setContent(html_d2bdd665ac3341b784e35e4e94cfe938);
+            
+
+            marker_accce451d6444ef6b0c9f5dfbd15f9ce.bindPopup(popup_b41f918226604c80a7f54e1d34707062);
+
+            
+        
+    
+
+            var marker_668e7ee1535c4263941311decc051213 = L.marker(
+                [49.684677,-103.00293],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_c285296965374bffa8eab6497cabe400 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_668e7ee1535c4263941311decc051213.setIcon(icon_c285296965374bffa8eab6497cabe400);
+            
+    
+            var popup_fc3b391b9c5e413cb40856352e9f1791 = L.popup({maxWidth: '500'});
+
+            
+                var html_c772467982b14236853ea96e30a85be6 = $('<div id="html_c772467982b14236853ea96e30a85be6" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 6B1-34--3B1-27-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_fc3b391b9c5e413cb40856352e9f1791.setContent(html_c772467982b14236853ea96e30a85be6);
+            
+
+            marker_668e7ee1535c4263941311decc051213.bindPopup(popup_fc3b391b9c5e413cb40856352e9f1791);
+
+            
+        
+    
+
+            var marker_50560f12b6ea4d58b1353614ba51821c = L.marker(
+                [49.6372,-103.245452],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_240bb8144d284a46a9072dd94887bba2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_50560f12b6ea4d58b1353614ba51821c.setIcon(icon_240bb8144d284a46a9072dd94887bba2);
+            
+    
+            var popup_7d5ace29785d4993bd1cdbe603fa67ed = L.popup({maxWidth: '500'});
+
+            
+                var html_9d448cbe6bb54caf88ff6d66992e76fb = $('<div id="html_9d448cbe6bb54caf88ff6d66992e76fb" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 3C13-12--4C13-11-008-10 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_7d5ace29785d4993bd1cdbe603fa67ed.setContent(html_9d448cbe6bb54caf88ff6d66992e76fb);
+            
+
+            marker_50560f12b6ea4d58b1353614ba51821c.bindPopup(popup_7d5ace29785d4993bd1cdbe603fa67ed);
+
+            
+        
+    
+
+            var marker_bcc0c799273a47daade40e485edeceee = L.marker(
+                [49.633558,-103.268045],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_0985e9746d56456dbf72086d94e71b4f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bcc0c799273a47daade40e485edeceee.setIcon(icon_0985e9746d56456dbf72086d94e71b4f);
+            
+    
+            var popup_96d0abe54e274ea2be9535b06d1fe31f = L.popup({maxWidth: '500'});
+
+            
+                var html_5f0384ab90b84b19924a447dbaec1404 = $('<div id="html_5f0384ab90b84b19924a447dbaec1404" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 3B12-11--1B12-10-008-10 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_96d0abe54e274ea2be9535b06d1fe31f.setContent(html_5f0384ab90b84b19924a447dbaec1404);
+            
+
+            marker_bcc0c799273a47daade40e485edeceee.bindPopup(popup_96d0abe54e274ea2be9535b06d1fe31f);
+
+            
+        
+    
+
+            var marker_dea83b52f3324105b29dfcf7b2a50c4f = L.marker(
+                [49.67013,-103.222864],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_1b9f148315044c198e043b1771dfce96 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dea83b52f3324105b29dfcf7b2a50c4f.setIcon(icon_1b9f148315044c198e043b1771dfce96);
+            
+    
+            var popup_884e90c934cc439c84371ad482da3d7a = L.popup({maxWidth: '500'});
+
+            
+                var html_6efd4722fcb0440c82046f4340760385 = $('<div id="html_6efd4722fcb0440c82046f4340760385" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD VU Hz 2C4-30--4C2-25-008-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_884e90c934cc439c84371ad482da3d7a.setContent(html_6efd4722fcb0440c82046f4340760385);
+            
+
+            marker_dea83b52f3324105b29dfcf7b2a50c4f.bindPopup(popup_884e90c934cc439c84371ad482da3d7a);
+
+            
+        
+    
+
+            var marker_33682bbd22f54acda737b009e6181d8f = L.marker(
+                [49.611878,-103.369839],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_58b70f5b3ddc449fa0b2e0670e31b1af = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_33682bbd22f54acda737b009e6181d8f.setIcon(icon_58b70f5b3ddc449fa0b2e0670e31b1af);
+            
+    
+            var popup_43c980607b274b88b8ed7b9ee6666422 = L.popup({maxWidth: '500'});
+
+            
+                var html_f34f8d88676a4c148256448976ced9c6 = $('<div id="html_f34f8d88676a4c148256448976ced9c6" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1B2-01--3A2-36-008-11 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_43c980607b274b88b8ed7b9ee6666422.setContent(html_f34f8d88676a4c148256448976ced9c6);
+            
+
+            marker_33682bbd22f54acda737b009e6181d8f.bindPopup(popup_43c980607b274b88b8ed7b9ee6666422);
+
+            
+        
+    
+
+            var marker_c1795b4f2b2248f99106fd877a9387af = L.marker(
+                [49.633554,-103.228752],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_80489e344610444497d96491089d74e9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c1795b4f2b2248f99106fd877a9387af.setIcon(icon_80489e344610444497d96491089d74e9);
+            
+    
+            var popup_fd0840a85ffd4309b1b9e6a2f43001b9 = L.popup({maxWidth: '500'});
+
+            
+                var html_91f5b666901c497aa7b550384801f18d = $('<div id="html_91f5b666901c497aa7b550384801f18d" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 1A9-12--2D9-07-008-10 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_fd0840a85ffd4309b1b9e6a2f43001b9.setContent(html_91f5b666901c497aa7b550384801f18d);
+            
+
+            marker_c1795b4f2b2248f99106fd877a9387af.bindPopup(popup_fd0840a85ffd4309b1b9e6a2f43001b9);
+
+            
+        
+    
+
+            var marker_acf0c6e472394ca9a229664df35065f7 = L.marker(
+                [49.641052,-103.380966],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_1afcdd5e3449426e8d3c32eeb46b7a85 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_acf0c6e472394ca9a229664df35065f7.setIcon(icon_1afcdd5e3449426e8d3c32eeb46b7a85);
+            
+    
+            var popup_561250904aed48cfb5066da5d5287e27 = L.popup({maxWidth: '500'});
+
+            
+                var html_f4bd41e3b7b1401ebfc856edf099b456 = $('<div id="html_f4bd41e3b7b1401ebfc856edf099b456" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC HZ 4-12-8-11W2 (4-13)<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_561250904aed48cfb5066da5d5287e27.setContent(html_f4bd41e3b7b1401ebfc856edf099b456);
+            
+
+            marker_acf0c6e472394ca9a229664df35065f7.bindPopup(popup_561250904aed48cfb5066da5d5287e27);
+
+            
+        
+    
+
+            var marker_f6682070805f409cba299c397cf1b00e = L.marker(
+                [49.615514,-103.200251],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_6d9bbdb6519c412ab474568689f96deb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f6682070805f409cba299c397cf1b00e.setIcon(icon_6d9bbdb6519c412ab474568689f96deb);
+            
+    
+            var popup_20cabc9eabe3411b8a62c376825d6b09 = L.popup({maxWidth: '500'});
+
+            
+                var html_e067182579ab451db6e306949ce154b5 = $('<div id="html_e067182579ab451db6e306949ce154b5" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 2B5-05--1B5-06-008-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_20cabc9eabe3411b8a62c376825d6b09.setContent(html_e067182579ab451db6e306949ce154b5);
+            
+
+            marker_f6682070805f409cba299c397cf1b00e.bindPopup(popup_20cabc9eabe3411b8a62c376825d6b09);
+
+            
+        
+    
+
+            var marker_d302a2cb26d9455d97de1ac692667a26 = L.marker(
+                [49.662761,-103.16097],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_d5bedf517c2149c8ba56a029d51247ea = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d302a2cb26d9455d97de1ac692667a26.setIcon(icon_d5bedf517c2149c8ba56a029d51247ea);
+            
+    
+            var popup_8ca316631f9b421cbef7aabb5e420594 = L.popup({maxWidth: '500'});
+
+            
+                var html_fdda619ee2d94fe48f483294acdbcf42 = $('<div id="html_fdda619ee2d94fe48f483294acdbcf42" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 4D9-21--3C12-21-008-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_8ca316631f9b421cbef7aabb5e420594.setContent(html_fdda619ee2d94fe48f483294acdbcf42);
+            
+
+            marker_d302a2cb26d9455d97de1ac692667a26.bindPopup(popup_8ca316631f9b421cbef7aabb5e420594);
+
+            
+        
+    
+
+            var marker_7c98b031d4ac40e4a20fb120908f9db6 = L.marker(
+                [49.651844,-103.093249],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_0f712768acc74eaea0fa147cb560dd0a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7c98b031d4ac40e4a20fb120908f9db6.setIcon(icon_0f712768acc74eaea0fa147cb560dd0a);
+            
+    
+            var popup_306b5889c0244031bdb813f2876174e4 = L.popup({maxWidth: '500'});
+
+            
+                var html_8b9fe9a5c8a5473a96dea5920d74e272 = $('<div id="html_8b9fe9a5c8a5473a96dea5920d74e272" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 4D16-13--2C13-19-008-09 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_306b5889c0244031bdb813f2876174e4.setContent(html_8b9fe9a5c8a5473a96dea5920d74e272);
+            
+
+            marker_7c98b031d4ac40e4a20fb120908f9db6.bindPopup(popup_306b5889c0244031bdb813f2876174e4);
+
+            
+        
+    
+
+            var marker_ef911a15ca694359a9b059aa1f638848 = L.marker(
+                [49.64468,-103.002943],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_401528e7c2d34e018fa96814d7e01b67 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ef911a15ca694359a9b059aa1f638848.setIcon(icon_401528e7c2d34e018fa96814d7e01b67);
+            
+    
+            var popup_005dad5ba7af48b0a0c4dc991d10f28f = L.popup({maxWidth: '500'});
+
+            
+                var html_8672594a9f3a48cd8ed6c34f854f6374 = $('<div id="html_8672594a9f3a48cd8ed6c34f854f6374" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC VIEWFIELD Hz 5A8-15--6A8-14-008-08 W2M<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Bakken</div>')[0];
+                popup_005dad5ba7af48b0a0c4dc991d10f28f.setContent(html_8672594a9f3a48cd8ed6c34f854f6374);
+            
+
+            marker_ef911a15ca694359a9b059aa1f638848.bindPopup(popup_005dad5ba7af48b0a0c4dc991d10f28f);
+
+            
+        
+    
+
+            var marker_26f1412e3a3b4f6489d9446914ae6d95 = L.marker(
+                [49.263563,-108.564754],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_2b615c644d544580b41fe7122901f661 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_26f1412e3a3b4f6489d9446914ae6d95.setIcon(icon_2b615c644d544580b41fe7122901f661);
+            
+    
+            var popup_a9549275f9c6443d8b488b3cb0565010 = L.popup({maxWidth: '650'});
+
+            
+                var html_6136e276ad194d2bb77a01e4b5ccd2d9 = $('<div id="html_6136e276ad194d2bb77a01e4b5ccd2d9" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC Rapdan HZ 6B1-1-4B1-36-4-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_a9549275f9c6443d8b488b3cb0565010.setContent(html_6136e276ad194d2bb77a01e4b5ccd2d9);
+            
+
+            marker_26f1412e3a3b4f6489d9446914ae6d95.bindPopup(popup_a9549275f9c6443d8b488b3cb0565010);
+
+            
+        
+    
+
+            var marker_afc757ba78874d8897844984f0fa8f18 = L.marker(
+                [49.332696,-108.598314],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_a5b89e0d0f8a499bb813b4fa4ca66c70 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'purple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_afc757ba78874d8897844984f0fa8f18.setIcon(icon_a5b89e0d0f8a499bb813b4fa4ca66c70);
+            
+    
+            var popup_13f3ac2664bc44d098c80910545eeacd = L.popup({maxWidth: '650'});
+
+            
+                var html_1ffed1b61ad041cb820b6ebb163338a5 = $('<div id="html_1ffed1b61ad041cb820b6ebb163338a5" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC Rapdan HZ 7D14-26-1D14-35-4-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Lower Shaunavon</div>')[0];
+                popup_13f3ac2664bc44d098c80910545eeacd.setContent(html_1ffed1b61ad041cb820b6ebb163338a5);
+            
+
+            marker_afc757ba78874d8897844984f0fa8f18.bindPopup(popup_13f3ac2664bc44d098c80910545eeacd);
+
+            
+        
+    
+
+            var marker_085d6b27ce3444e7ba066cc04fe0622a = L.marker(
+                [49.390991,-108.632068],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_6d8fe240da734d0abd2e9fdd76290ba6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'purple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_085d6b27ce3444e7ba066cc04fe0622a.setIcon(icon_6d8fe240da734d0abd2e9fdd76290ba6);
+            
+    
+            var popup_9dbd308e26ca4c32950129dd024424cf = L.popup({maxWidth: '650'});
+
+            
+                var html_dba327b66f6f4473a17f5d16bbc4b732 = $('<div id="html_dba327b66f6f4473a17f5d16bbc4b732" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC Eastbrook  HZ 4C16-16-2C16-21-5-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Lower Shaunavon</div>')[0];
+                popup_9dbd308e26ca4c32950129dd024424cf.setContent(html_dba327b66f6f4473a17f5d16bbc4b732);
+            
+
+            marker_085d6b27ce3444e7ba066cc04fe0622a.bindPopup(popup_9dbd308e26ca4c32950129dd024424cf);
+
+            
+        
+    
+
+            var marker_3de8e47f4335472faa5e33d7fc895160 = L.marker(
+                [49.449182,-108.615198],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_aad77541fdee4588bbc515a28cd958ee = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3de8e47f4335472faa5e33d7fc895160.setIcon(icon_aad77541fdee4588bbc515a28cd958ee);
+            
+    
+            var popup_65187006c7d54651b1c4e47da5b88635 = L.popup({maxWidth: '650'});
+
+            
+                var html_8fe88ba8bb404d7d8e6d111bd5b4b248 = $('<div id="html_8fe88ba8bb404d7d8e6d111bd5b4b248" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC Eastend HZ 4D15-3-1D15-10-6-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_65187006c7d54651b1c4e47da5b88635.setContent(html_8fe88ba8bb404d7d8e6d111bd5b4b248);
+            
+
+            marker_3de8e47f4335472faa5e33d7fc895160.bindPopup(popup_65187006c7d54651b1c4e47da5b88635);
+
+            
+        
+    
+
+            var marker_360096a161d04fac91224a4ee33d2cfd = L.marker(
+                [49.380109,-108.654552],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_249e831bd5924e578d0333918d108a29 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_360096a161d04fac91224a4ee33d2cfd.setIcon(icon_249e831bd5924e578d0333918d108a29);
+            
+    
+            var popup_7c46752d49824f4e9a4c465fc425561d = L.popup({maxWidth: '650'});
+
+            
+                var html_e9463d0d59694557ae596cf3471ace89 = $('<div id="html_e9463d0d59694557ae596cf3471ace89" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC Eastbrook HZ 3A1-17-2D1-16-5-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_7c46752d49824f4e9a4c465fc425561d.setContent(html_e9463d0d59694557ae596cf3471ace89);
+            
+
+            marker_360096a161d04fac91224a4ee33d2cfd.bindPopup(popup_7c46752d49824f4e9a4c465fc425561d);
+
+            
+        
+    
+
+            var marker_d4f47cdfc42146c4bfc80a16ed4508a8 = L.marker(
+                [49.390977,-108.643181],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_adcd5377ffa54086a848f21a8f13333b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'purple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d4f47cdfc42146c4bfc80a16ed4508a8.setIcon(icon_adcd5377ffa54086a848f21a8f13333b);
+            
+    
+            var popup_b04c4bc5117b4f7f8dc7e53b0e2603c0 = L.popup({maxWidth: '650'});
+
+            
+                var html_c5027a93b7bf4e4f8a9c56f205930a43 = $('<div id="html_c5027a93b7bf4e4f8a9c56f205930a43" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC Eastbrook HZ 3C14-16-1D13-21-5-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Lower Shaunavon</div>')[0];
+                popup_b04c4bc5117b4f7f8dc7e53b0e2603c0.setContent(html_c5027a93b7bf4e4f8a9c56f205930a43);
+            
+
+            marker_d4f47cdfc42146c4bfc80a16ed4508a8.bindPopup(popup_b04c4bc5117b4f7f8dc7e53b0e2603c0);
+
+            
+        
+    
+
+            var marker_0451c7a343d443b7893a8758051490e0 = L.marker(
+                [49.390991,-108.632068],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_cf792e5990de4cc284e3f4d160d30ac3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0451c7a343d443b7893a8758051490e0.setIcon(icon_cf792e5990de4cc284e3f4d160d30ac3);
+            
+    
+            var popup_a05a380de3fc4c3489106cd9848cc619 = L.popup({maxWidth: '650'});
+
+            
+                var html_e04829522ab6493f829e1a86921ce2e2 = $('<div id="html_e04829522ab6493f829e1a86921ce2e2" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC Eastbrook HZ 11D16-16-6D16-21-5-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_a05a380de3fc4c3489106cd9848cc619.setContent(html_e04829522ab6493f829e1a86921ce2e2);
+            
+
+            marker_0451c7a343d443b7893a8758051490e0.bindPopup(popup_a05a380de3fc4c3489106cd9848cc619);
+
+            
+        
+    
+
+            var marker_f217c78838b24271a4751dafcaca806f = L.marker(
+                [49.332722,-108.575898],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_16743b0fb2024336b785bf4190d48a67 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f217c78838b24271a4751dafcaca806f.setIcon(icon_16743b0fb2024336b785bf4190d48a67);
+            
+    
+            var popup_ad6c70bdc53f41488a087903a40ecedc = L.popup({maxWidth: '650'});
+
+            
+                var html_74e8600c4266429692b5d646d823285a = $('<div id="html_74e8600c4266429692b5d646d823285a" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC HZ 3D14-25-1C14-36-4-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_ad6c70bdc53f41488a087903a40ecedc.setContent(html_74e8600c4266429692b5d646d823285a);
+            
+
+            marker_f217c78838b24271a4751dafcaca806f.bindPopup(popup_ad6c70bdc53f41488a087903a40ecedc);
+
+            
+        
+    
+
+            var marker_6f3ce33b045e4220b552422f5fd540de = L.marker(
+                [49.423669,-108.587232],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_5439266927054f2d960dd4ef1c178869 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6f3ce33b045e4220b552422f5fd540de.setIcon(icon_5439266927054f2d960dd4ef1c178869);
+            
+    
+            var popup_aa82759ae82d485585fb86162c38ff71 = L.popup({maxWidth: '650'});
+
+            
+                var html_0ff93618b42247c799af55df1f5aec1e = $('<div id="html_0ff93618b42247c799af55df1f5aec1e" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC Eastend HZ 4B1-35-3A2-26-5-20 W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_aa82759ae82d485585fb86162c38ff71.setContent(html_0ff93618b42247c799af55df1f5aec1e);
+            
+
+            marker_6f3ce33b045e4220b552422f5fd540de.bindPopup(popup_aa82759ae82d485585fb86162c38ff71);
+
+            
+        
+    
+
+            var marker_63eb519f5f624c858ba9133bccb6b936 = L.marker(
+                [49.376312,-108.665577],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_0617436930b54a27a3157ac08eb16907 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_63eb519f5f624c858ba9133bccb6b936.setIcon(icon_0617436930b54a27a3157ac08eb16907);
+            
+    
+            var popup_d2c9750dcca04908b9a042adc61863b4 = L.popup({maxWidth: '650'});
+
+            
+                var html_30a3357824d74c278e8e2e918cecb6b3 = $('<div id="html_30a3357824d74c278e8e2e918cecb6b3" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC Eastbrook HZ 3D14-8-2D14-17-5-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_d2c9750dcca04908b9a042adc61863b4.setContent(html_30a3357824d74c278e8e2e918cecb6b3);
+            
+
+            marker_63eb519f5f624c858ba9133bccb6b936.bindPopup(popup_d2c9750dcca04908b9a042adc61863b4);
+
+            
+        
+    
+
+            var marker_0c1ce5f7725c493993a66760d88de998 = L.marker(
+                [49.383728,-108.654553],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_3017b16afc8f41338fe63413f0932443 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0c1ce5f7725c493993a66760d88de998.setIcon(icon_3017b16afc8f41338fe63413f0932443);
+            
+    
+            var popup_e3c4d2214a034f0387936856238da105 = L.popup({maxWidth: '650'});
+
+            
+                var html_af1a43a33e8e4bec82102263e4b618c9 = $('<div id="html_af1a43a33e8e4bec82102263e4b618c9" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC Eastbrook HZ 4A8-17-1A7-16-5-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_e3c4d2214a034f0387936856238da105.setContent(html_af1a43a33e8e4bec82102263e4b618c9);
+            
+
+            marker_0c1ce5f7725c493993a66760d88de998.bindPopup(popup_e3c4d2214a034f0387936856238da105);
+
+            
+        
+    
+
+            var marker_40d012afbd874d1ebacb29353a2f4f44 = L.marker(
+                [49.420059,-108.581416],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_942c7a4df6c94c9d871733b06e12a0c6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'purple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_40d012afbd874d1ebacb29353a2f4f44.setIcon(icon_942c7a4df6c94c9d871733b06e12a0c6);
+            
+    
+            var popup_fdcd284f445f4bcaa13910e0414f5ed8 = L.popup({maxWidth: '650'});
+
+            
+                var html_af57574035c64c5a9052cb18af9236be = $('<div id="html_af57574035c64c5a9052cb18af9236be" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC RAPDAN N HZ 3D13-35-2D13-2-5-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Lower Shaunavon</div>')[0];
+                popup_fdcd284f445f4bcaa13910e0414f5ed8.setContent(html_af57574035c64c5a9052cb18af9236be);
+            
+
+            marker_40d012afbd874d1ebacb29353a2f4f44.bindPopup(popup_fdcd284f445f4bcaa13910e0414f5ed8);
+
+            
+        
+    
+
+            var marker_61d4f465aa4c449cb7e8cc0ba5252bf3 = L.marker(
+                [49.332707,-108.59278],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_fa90d37d1ae0432ca3ec74b0f2e35e82 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'purple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_61d4f465aa4c449cb7e8cc0ba5252bf3.setIcon(icon_fa90d37d1ae0432ca3ec74b0f2e35e82);
+            
+    
+            var popup_484841b9f9354c4c97a33b2ec4146848 = L.popup({maxWidth: '650'});
+
+            
+                var html_e335da2755cb4aa4a0f8e021e8921d2f = $('<div id="html_e335da2755cb4aa4a0f8e021e8921d2f" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC Rapdan HZ 4D15-26-2C16-35-4-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Lower Shaunavon</div>')[0];
+                popup_484841b9f9354c4c97a33b2ec4146848.setContent(html_e335da2755cb4aa4a0f8e021e8921d2f);
+            
+
+            marker_61d4f465aa4c449cb7e8cc0ba5252bf3.bindPopup(popup_484841b9f9354c4c97a33b2ec4146848);
+
+            
+        
+    
+
+            var marker_9857c4f544c94948b1e2b5f3b98384da = L.marker(
+                [49.332707,-108.59278],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_8a68e74666ee47ceb5de9e76fe991df4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'purple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9857c4f544c94948b1e2b5f3b98384da.setIcon(icon_8a68e74666ee47ceb5de9e76fe991df4);
+            
+    
+            var popup_b42266d1e7f54623a4ac20073d0388b3 = L.popup({maxWidth: '650'});
+
+            
+                var html_a5b17e10ea234ed8be46039c0593a2d9 = $('<div id="html_a5b17e10ea234ed8be46039c0593a2d9" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC Rapdan HZ 8D15-26-2D15-35-4-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Lower Shaunavon</div>')[0];
+                popup_b42266d1e7f54623a4ac20073d0388b3.setContent(html_a5b17e10ea234ed8be46039c0593a2d9);
+            
+
+            marker_9857c4f544c94948b1e2b5f3b98384da.bindPopup(popup_b42266d1e7f54623a4ac20073d0388b3);
+
+            
+        
+    
+
+            var marker_7b8c905c676f4bd1a50ad9c24a5f5c5d = L.marker(
+                [49.332722,-108.575898],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_ba80a9f3d9da4d239abe787df826218d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7b8c905c676f4bd1a50ad9c24a5f5c5d.setIcon(icon_ba80a9f3d9da4d239abe787df826218d);
+            
+    
+            var popup_eb5956a830634ac1a85d378dd7c1b09c = L.popup({maxWidth: '650'});
+
+            
+                var html_aec3873c707044e0b47051d89a4dfd70 = $('<div id="html_aec3873c707044e0b47051d89a4dfd70" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC HZ 8D14-25-1D14-36-4-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_eb5956a830634ac1a85d378dd7c1b09c.setContent(html_aec3873c707044e0b47051d89a4dfd70);
+            
+
+            marker_7b8c905c676f4bd1a50ad9c24a5f5c5d.bindPopup(popup_eb5956a830634ac1a85d378dd7c1b09c);
+
+            
+        
+    
+
+            var marker_b88e5fd4eb95496bbc770bf898cdf85c = L.marker(
+                [49.332722,-108.575898],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_255fcc8fef3943ada05e2dbccf3838a9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b88e5fd4eb95496bbc770bf898cdf85c.setIcon(icon_255fcc8fef3943ada05e2dbccf3838a9);
+            
+    
+            var popup_8cb0be04519b4181836a1fc720cb7bdc = L.popup({maxWidth: '650'});
+
+            
+                var html_e62fc8e6921d471f842f4484d7cc30eb = $('<div id="html_e62fc8e6921d471f842f4484d7cc30eb" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC HZ 4D14-25-2C15-36-4-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_8cb0be04519b4181836a1fc720cb7bdc.setContent(html_e62fc8e6921d471f842f4484d7cc30eb);
+            
+
+            marker_b88e5fd4eb95496bbc770bf898cdf85c.bindPopup(popup_8cb0be04519b4181836a1fc720cb7bdc);
+
+            
+        
+    
+
+            var marker_a1f65ef5e9ef4d829f086491c6da9bde = L.marker(
+                [49.288916,-108.603812],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_c396fc5baebb4c71a2b90ee476a3972d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a1f65ef5e9ef4d829f086491c6da9bde.setIcon(icon_c396fc5baebb4c71a2b90ee476a3972d);
+            
+    
+            var popup_bf6461bf9b774498b5e5e382e6a538c2 = L.popup({maxWidth: '650'});
+
+            
+                var html_3b0c163fe0304f0ea2d099a1c2f01d3a = $('<div id="html_3b0c163fe0304f0ea2d099a1c2f01d3a" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC RAPDAN UNIT HZ 11D13-11-2C14-14-4-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_bf6461bf9b774498b5e5e382e6a538c2.setContent(html_3b0c163fe0304f0ea2d099a1c2f01d3a);
+            
+
+            marker_a1f65ef5e9ef4d829f086491c6da9bde.bindPopup(popup_bf6461bf9b774498b5e5e382e6a538c2);
+
+            
+        
+    
+
+            var marker_b4254dcb4af44dcea7b913e7e1b95c8d = L.marker(
+                [49.336341,-108.581436],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_5d42e238b3844d32aa1069d7fd3b990f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b4254dcb4af44dcea7b913e7e1b95c8d.setIcon(icon_5d42e238b3844d32aa1069d7fd3b990f);
+            
+    
+            var popup_b0e89d575c0b4ea6b870207b4d1929fa = L.popup({maxWidth: '650'});
+
+            
+                var html_5a982c4bbe3e45a0b0e50fa509884917 = $('<div id="html_5a982c4bbe3e45a0b0e50fa509884917" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC HZ 5B4-36-3A4-25-4-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_b0e89d575c0b4ea6b870207b4d1929fa.setContent(html_5a982c4bbe3e45a0b0e50fa509884917);
+            
+
+            marker_b4254dcb4af44dcea7b913e7e1b95c8d.bindPopup(popup_b0e89d575c0b4ea6b870207b4d1929fa);
+
+            
+        
+    
+
+            var marker_3ef2d8e63bf54a67a09b0b5173e3ea0a = L.marker(
+                [49.332737,-108.654515],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_3682cb23e8754e83996ee83a82a7a8b4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3ef2d8e63bf54a67a09b0b5173e3ea0a.setIcon(icon_3682cb23e8754e83996ee83a82a7a8b4);
+            
+    
+            var popup_43c1c307bb5c46809a0ae488165f6648 = L.popup({maxWidth: '650'});
+
+            
+                var html_859b568325224fbfa30471a437b55642 = $('<div id="html_859b568325224fbfa30471a437b55642" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC HZ 3C16-29-1D15-32-4-20W3<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_43c1c307bb5c46809a0ae488165f6648.setContent(html_859b568325224fbfa30471a437b55642);
+            
+
+            marker_3ef2d8e63bf54a67a09b0b5173e3ea0a.bindPopup(popup_43c1c307bb5c46809a0ae488165f6648);
+
+            
+        
+    
+
+            var marker_5a68a5888a0b43769e9ae5606dbd64a3 = L.marker(
+                [49.288964,-108.62621],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_6b2eabe6eb5247f5a42c9bd5fb6e6271 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5a68a5888a0b43769e9ae5606dbd64a3.setIcon(icon_6b2eabe6eb5247f5a42c9bd5fb6e6271);
+            
+    
+            var popup_f42d0cadbc2048aab99d274b9e43b4f8 = L.popup({maxWidth: '650'});
+
+            
+                var html_e0ac7161af0747ceab028fdabc7a072c = $('<div id="html_e0ac7161af0747ceab028fdabc7a072c" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC HZ 14-15-004-20W3 (13-10)<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_f42d0cadbc2048aab99d274b9e43b4f8.setContent(html_e0ac7161af0747ceab028fdabc7a072c);
+            
+
+            marker_5a68a5888a0b43769e9ae5606dbd64a3.bindPopup(popup_f42d0cadbc2048aab99d274b9e43b4f8);
+
+            
+        
+    
+
+            var marker_661e355792aa48b3b88e449e4c516e42 = L.marker(
+                [49.288964,-108.62621],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_23097b3d468c48d8abe1ef1491bd99d0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_661e355792aa48b3b88e449e4c516e42.setIcon(icon_23097b3d468c48d8abe1ef1491bd99d0);
+            
+    
+            var popup_daa824fce53b4b64acdc2d3e913038d8 = L.popup({maxWidth: '650'});
+
+            
+                var html_603da5d2e10a4de09865782e6ee2a82c = $('<div id="html_603da5d2e10a4de09865782e6ee2a82c" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC HZ (103) 13-15-004-20W3 (13-10)<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_daa824fce53b4b64acdc2d3e913038d8.setContent(html_603da5d2e10a4de09865782e6ee2a82c);
+            
+
+            marker_661e355792aa48b3b88e449e4c516e42.bindPopup(popup_daa824fce53b4b64acdc2d3e913038d8);
+
+            
+        
+    
+
+            var marker_54077eac86174469ac105839b020f75a = L.marker(
+                [49.288964,-108.62621],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_b4f586c04bc34d22b59587492ab59911 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_54077eac86174469ac105839b020f75a.setIcon(icon_b4f586c04bc34d22b59587492ab59911);
+            
+    
+            var popup_13b6d220fd9841fca499e9446e197f8b = L.popup({maxWidth: '650'});
+
+            
+                var html_1350b628ec6848bfbae76d87b4b1bcdb = $('<div id="html_1350b628ec6848bfbae76d87b4b1bcdb" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC HZ (102) 13-15-004-20W3 (13-10)<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_13b6d220fd9841fca499e9446e197f8b.setContent(html_1350b628ec6848bfbae76d87b4b1bcdb);
+            
+
+            marker_54077eac86174469ac105839b020f75a.bindPopup(popup_13b6d220fd9841fca499e9446e197f8b);
+
+            
+        
+    
+
+            var marker_98c96b0a29bb4f1aac186f57b90d20cd = L.marker(
+                [49.278123,-108.631997],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8c53aa2e0aae43beb3af9b6fd6039dc1);
+            
+    
+
+                var icon_9acf72d9056e4b2ba14c5b1d44308cf6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_98c96b0a29bb4f1aac186f57b90d20cd.setIcon(icon_9acf72d9056e4b2ba14c5b1d44308cf6);
+            
+    
+            var popup_9f5a697943724b50a345e7b481ec5f9a = L.popup({maxWidth: '650'});
+
+            
+                var html_ab48cf4ae5674a43af401b0effb6e958 = $('<div id="html_ab48cf4ae5674a43af401b0effb6e958" style="width: 100.0%; height: 100.0%;"><strong>Well Name: </strong>CPEC HZ (103) 02-04-004-20W3 (01-09)<br><strong>Operator: </strong>Crescent Point Energy Corp.<br><strong>Target Formation: </strong>Upper Shaunavon B</div>')[0];
+                popup_9f5a697943724b50a345e7b481ec5f9a.setContent(html_ab48cf4ae5674a43af401b0effb6e958);
+            
+
+            marker_98c96b0a29bb4f1aac186f57b90d20cd.bindPopup(popup_9f5a697943724b50a345e7b481ec5f9a);
+
+            
+        
+</script>
