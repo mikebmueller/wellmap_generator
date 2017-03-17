@@ -4,7 +4,7 @@ import csv
 # Set tileset and starting map location and zoom
 tileset = r'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 wellmap = folium.Map(location=[51, -102], zoom_start=5, tiles=tileset,
-    attr='My Data Attribution')
+    attr=' ')
 
 markercluster = folium.MarkerCluster().add_to(wellmap)
 
