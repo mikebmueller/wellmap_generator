@@ -1,22 +1,12 @@
 import folium
 import csv
-from jinja2 import Template
 
+# Set tileset and starting map location and zoom
 tileset = r'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 wellmap = folium.Map(location=[51, -102], zoom_start=5, tiles=tileset,
     attr='My Data Attribution')
 
-# Create MarkerCluster group - Need to edit commented code below in folium.MarkerCluster(), not sure how to go about this!
-'''
-folium.MarkerCluster()._template = Template(u"""
-    {% macro script(this, kwargs) %}
-        var {{this.get_name()}} = L.markerClusterGroup({maxClusterRadius: 40});
-        {{this._parent.get_name()}}.addLayer({{this.get_name()}});
-    {% endmacro %}
-    """)
-'''
 markercluster = folium.MarkerCluster().add_to(wellmap)
-
 
 # Open and read welllist.csv
 with open('welllist.csv', 'rb') as f:
